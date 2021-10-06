@@ -1,0 +1,1380 @@
+{
+    "players": [
+        {
+            "division": 1,
+            "seed": "1",
+            "name": "TaToH",
+            "discord": "tatoh89#2456",
+            "avgELO": "2497.5",
+            "aoe2net": "https://aoe2.net/#profile-197388"
+        },
+        {
+            "division": 1,
+            "seed": "2",
+            "name": "LaN",
+            "discord": "LaaaaaN#5576",
+            "avgELO": "2359.5",
+            "aoe2net": "https://aoe2.net/#profile-232410"
+        },
+        {
+            "division": 1,
+            "seed": "3",
+            "name": "ReyO",
+            "discord": "ReyO#0533",
+            "avgELO": "1977",
+            "aoe2net": "https://aoe2.net/#profile-429847"
+        },
+        {
+            "division": 1,
+            "seed": "4",
+            "name": "Davicy",
+            "discord": "DaViCy#8981",
+            "avgELO": "1818.5",
+            "aoe2net": "https://aoe2.net/#profile-425762"
+        },
+        {
+            "division": 1,
+            "seed": "5",
+            "name": "12Tirador",
+            "discord": "12Tirador#1051",
+            "avgELO": "1728.5",
+            "aoe2net": "https://aoe2.net/#profile-260973"
+        },
+        {
+            "division": 1,
+            "seed": "6",
+            "name": "R1chards",
+            "discord": "R1CHARDS #1199",
+            "avgELO": "1841",
+            "aoe2net": "https://aoe2.net/#profile-667726"
+        },
+        {
+            "division": 1,
+            "seed": "7",
+            "name": "Gauss",
+            "discord": "Gauss#8338",
+            "avgELO": "1752",
+            "aoe2net": "https://aoe2.net/#profile-447940"
+        },
+        {
+            "division": 1,
+            "seed": "8",
+            "name": "Yago",
+            "discord": "Yago#6916",
+            "avgELO": "1903",
+            "aoe2net": "https://aoe2.net/#profile-1848728\t"
+        },
+        {
+            "division": 1,
+            "seed": "9",
+            "name": "Jorge García",
+            "discord": "Jorge García#1680",
+            "avgELO": "1721.5",
+            "aoe2net": "https://aoe2.net/#profile-2574050"
+        },
+        {
+            "division": 1,
+            "seed": "10",
+            "name": "OSO_CT",
+            "discord": "Oso_CT#5221",
+            "avgELO": "1795.5",
+            "aoe2net": "https://aoe2.net/#profile-5187661"
+        },
+        {
+            "division": 1,
+            "seed": "11",
+            "name": "Flavius",
+            "discord": "Flavius#4359",
+            "avgELO": "1732",
+            "aoe2net": "https://aoe2.net/#profile-1847943"
+        },
+        {
+            "division": 1,
+            "seed": "12",
+            "name": "Burelés",
+            "discord": "Burelés /Breogán#3994",
+            "avgELO": "1706",
+            "aoe2net": "https://aoe2.net/#profile-287230"
+        },
+        {
+            "division": 1,
+            "seed": "13",
+            "name": "Bazing Hood",
+            "discord": "bazing hood#1992",
+            "avgELO": "1749.5",
+            "aoe2net": "https://aoe2.net/#profile-2012897"
+        },
+        {
+            "division": 1,
+            "seed": "14",
+            "name": "NHN_Forever",
+            "discord": "Forever#5521",
+            "avgELO": "1738.5",
+            "aoe2net": "https://aoe2.net/#profile-716668"
+        },
+        {
+            "division": 1,
+            "seed": "15",
+            "name": "Moneimon",
+            "discord": "Moneimon#8902",
+            "avgELO": "1988.5",
+            "aoe2net": "https://aoe2.net/#profile-249653"
+        },
+        {
+            "division": 1,
+            "seed": "16",
+            "name": "Poxo",
+            "discord": "Poxo#4127",
+            "avgELO": "1983",
+            "aoe2net": "https://aoe2.net/#profile-212135"
+        },
+        {
+            "division": 1,
+            "seed": "17",
+            "name": "in PiezoD",
+            "discord": "Piezod#6382",
+            "avgELO": "1932",
+            "aoe2net": "https://aoe2.net/#profile-499923"
+        },
+        {
+            "division": 1,
+            "seed": "18",
+            "name": "iN.C3mbrich",
+            "discord": "c3mbrich#8656",
+            "avgELO": "1908",
+            "aoe2net": "https://aoe2.net/#profile-96571"
+        },
+        {
+            "division": 1,
+            "seed": "19",
+            "name": "pau795",
+            "discord": "pau795#9253",
+            "avgELO": "1817",
+            "aoe2net": "https://aoe2.net/#profile-215042"
+        },
+        {
+            "division": 1,
+            "seed": "20",
+            "name": "NHN_iKKi",
+            "discord": "Thommy88 #9201",
+            "avgELO": "1675",
+            "aoe2net": "https://aoe2.net/#profile-5302190"
+        },
+        {
+            "division": 1,
+            "seed": "21",
+            "name": "FerV",
+            "discord": "Fervb#7912",
+            "avgELO": "1700",
+            "aoe2net": "https://aoe2.net/#profile-863791"
+        },
+        {
+            "division": 1,
+            "seed": "22",
+            "name": "Arch_er_",
+            "discord": "Arch_er#3775",
+            "avgELO": "1691",
+            "aoe2net": "https://aoe2.net/#profile-2100169"
+        },
+        {
+            "division": 2,
+            "seed": "1",
+            "name": "Rumba",
+            "discord": "Rumbanned#8255",
+            "avgELO": "1591.5",
+            "aoe2net": "https://aoe2.net/#profile-841889"
+        },
+        {
+            "division": 2,
+            "seed": "2",
+            "name": "Cruker",
+            "discord": "Cruker#4234",
+            "avgELO": "1640.5",
+            "aoe2net": "https://aoe2.net/#profile-3044087"
+        },
+        {
+            "division": 2,
+            "seed": "3",
+            "name": "MaSSa_V",
+            "discord": "Massa_V#3455",
+            "avgELO": "1583",
+            "aoe2net": "https://aoe2.net/#profile-2626999"
+        },
+        {
+            "division": 2,
+            "seed": "4",
+            "name": "SeMuR",
+            "discord": "SeMuR#0588",
+            "avgELO": "1739.5",
+            "aoe2net": "https://aoe2.net/#profile-478118"
+        },
+        {
+            "division": 2,
+            "seed": "5",
+            "name": "barrufet_aoc",
+            "discord": "barrufet_aoc#9489",
+            "avgELO": "1586.5",
+            "aoe2net": "https://aoe2.net/#profile-258668"
+        },
+        {
+            "division": 2,
+            "seed": "6",
+            "name": "[CONQUIS]dautbng",
+            "discord": "bng#9475",
+            "avgELO": "1541",
+            "aoe2net": "https://aoe2.net/#profile-1879291"
+        },
+        {
+            "division": 2,
+            "seed": "7",
+            "name": "holland89",
+            "discord": "holland89#5978",
+            "avgELO": "1521",
+            "aoe2net": "https://aoe2.net/#profile-236788"
+        },
+        {
+            "division": 2,
+            "seed": "8",
+            "name": "enfeig",
+            "discord": "enfeig-kike#8902",
+            "avgELO": "1522.5",
+            "aoe2net": "https://aoe2.net/#profile-233104"
+        },
+        {
+            "division": 2,
+            "seed": "9",
+            "name": "Xelythedog",
+            "discord": "Xelythedog#7883",
+            "avgELO": "1408.5",
+            "aoe2net": "https://aoe2.net/#profile-4602742"
+        },
+        {
+            "division": 2,
+            "seed": "10",
+            "name": "Rosich",
+            "discord": "FreePass [Rosich]#4217",
+            "avgELO": "1550",
+            "aoe2net": "https://aoe2.net/#profile-3755006"
+        },
+        {
+            "division": 2,
+            "seed": "11",
+            "name": "SpiDey__",
+            "discord": "SpIDey__#3606",
+            "avgELO": "1469",
+            "aoe2net": "https://aoe2.net/#profile-2596756"
+        },
+        {
+            "division": 2,
+            "seed": "12",
+            "name": "PoXoLo",
+            "discord": "PoXoLo#4089",
+            "avgELO": "1645",
+            "aoe2net": "https://aoe2.net/#profile-340055"
+        },
+        {
+            "division": 2,
+            "seed": "13",
+            "name": "twitcht.tv/hilariano",
+            "discord": "Hilariano#4582",
+            "avgELO": "1675.5",
+            "aoe2net": "https://aoe2.net/#profile-59289"
+        },
+        {
+            "division": 2,
+            "seed": "14",
+            "name": "The Flipper",
+            "discord": "TheFlipper#0551",
+            "avgELO": "1595",
+            "aoe2net": "https://aoe2.net/#profile-2080681"
+        },
+        {
+            "division": 2,
+            "seed": "15",
+            "name": "Daddy Yonki",
+            "discord": "Sithor#4757",
+            "avgELO": "1604.5",
+            "aoe2net": "https://aoe2.net/#profile-2528866"
+        },
+        {
+            "division": 2,
+            "seed": "16",
+            "name": "NHN_KrsK",
+            "discord": "krsk#3899",
+            "avgELO": "1576.5",
+            "aoe2net": "https://aoe2.net/#profile-5216228"
+        },
+        {
+            "division": 2,
+            "seed": "17",
+            "name": "vagos.facu",
+            "discord": "dVirgilio#8723",
+            "avgELO": "1571.5",
+            "aoe2net": "https://aoe2.net/#profile-5044474"
+        },
+        {
+            "division": 2,
+            "seed": "18",
+            "name": "rlos",
+            "discord": "Rlos#6560",
+            "avgELO": "1581.5",
+            "aoe2net": "https://aoe2.net/#profile-255839"
+        },
+        {
+            "division": 2,
+            "seed": "19",
+            "name": "DavidVJ",
+            "discord": "DavidVJ#0788",
+            "avgELO": "1580.5",
+            "aoe2net": "https://aoe2.net/#profile-3566006"
+        },
+        {
+            "division": 2,
+            "seed": "20",
+            "name": "The Revenge",
+            "discord": "ReVeNGe_#2043",
+            "avgELO": "1544.5",
+            "aoe2net": "https://aoe2.net/#profile-646085"
+        },
+        {
+            "division": 2,
+            "seed": "21",
+            "name": "Arkan",
+            "discord": "Arkan#2601",
+            "avgELO": "1519.5",
+            "aoe2net": "https://aoe2.net/#profile-222334"
+        },
+        {
+            "division": 2,
+            "seed": "22",
+            "name": "Misc0",
+            "discord": "Misc0#5268",
+            "avgELO": "1570",
+            "aoe2net": "https://aoe2.net/#profile-253497"
+        },
+        {
+            "division": 3,
+            "seed": "1",
+            "name": "Nathan CT",
+            "discord": "Nathan CT#2942",
+            "avgELO": "1406",
+            "aoe2net": "https://aoe2.net/#profile-2416615"
+        },
+        {
+            "division": 3,
+            "seed": "2",
+            "name": "galen",
+            "discord": "galen#9602",
+            "avgELO": "1254",
+            "aoe2net": "https://aoe2.net/#profile-3469310"
+        },
+        {
+            "division": 3,
+            "seed": "3",
+            "name": "[UDGes] Spusaker",
+            "discord": "spoles#7576",
+            "avgELO": "1349.5",
+            "aoe2net": "https://aoe2.net/#profile-267167"
+        },
+        {
+            "division": 3,
+            "seed": "4",
+            "name": "Dani",
+            "discord": "Juambo#7276",
+            "avgELO": "1377",
+            "aoe2net": "https://aoe2.net/#profile-1988166"
+        },
+        {
+            "division": 3,
+            "seed": "5",
+            "name": "HypnoCat",
+            "discord": "HypnoCat#9821",
+            "avgELO": "1438.5",
+            "aoe2net": "https://aoe2.net/#profile-232252"
+        },
+        {
+            "division": 3,
+            "seed": "6",
+            "name": "[CONQUIS] Wayat",
+            "discord": "FranPH87#6873",
+            "avgELO": "1354.5",
+            "aoe2net": "https://aoe2.net/#profile-282470"
+        },
+        {
+            "division": 3,
+            "seed": "7",
+            "name": "[SotC] [Clon] Pancho",
+            "discord": "Pancho#4277",
+            "avgELO": "1351",
+            "aoe2net": "https://aoe2.net/#profile-2185341"
+        },
+        {
+            "division": 3,
+            "seed": "8",
+            "name": "[Conquis]Mambru!",
+            "discord": "mambru#0652",
+            "avgELO": "1376",
+            "aoe2net": "https://aoe2.net/#profile-329032"
+        },
+        {
+            "division": 3,
+            "seed": "9",
+            "name": "NHN_PhisysImperi",
+            "discord": "NHN_PhisysImperi#1322",
+            "avgELO": "1589.5",
+            "aoe2net": "https://aoe2.net/#profile-580081"
+        },
+        {
+            "division": 3,
+            "seed": "10",
+            "name": "kokisfc",
+            "discord": "kokisfc#3944",
+            "avgELO": "1405.5",
+            "aoe2net": "https://aoe2.net/#profile-2915598"
+        },
+        {
+            "division": 3,
+            "seed": "11",
+            "name": "DK_ManuRoki",
+            "discord": "manuroki #7766",
+            "avgELO": "1441",
+            "aoe2net": "https://aoe2.net/#profile-5082716"
+        },
+        {
+            "division": 3,
+            "seed": "12",
+            "name": "GodricKus",
+            "discord": "GodricKus#3403",
+            "avgELO": "1525",
+            "aoe2net": "https://aoe2.net/#profile-2626166"
+        },
+        {
+            "division": 3,
+            "seed": "13",
+            "name": "Alex_vazquez99",
+            "discord": "alex_vazquez99#3360",
+            "avgELO": "937",
+            "aoe2net": "https://aoe2.net/#profile-1787450"
+        },
+        {
+            "division": 3,
+            "seed": "14",
+            "name": "NHN_Jokes",
+            "discord": "jokes#2246",
+            "avgELO": "1509",
+            "aoe2net": "https://aoe2.net/#profile-1068642"
+        },
+        {
+            "division": 3,
+            "seed": "15",
+            "name": "King_Llanes CT",
+            "discord": "King_Llanes#6636",
+            "avgELO": "1497",
+            "aoe2net": "https://aoe2.net/#profile-213713"
+        },
+        {
+            "division": 3,
+            "seed": "16",
+            "name": "acelgaman",
+            "discord": "torte#7797",
+            "avgELO": "1466",
+            "aoe2net": "https://aoe2.net/#profile-2169377"
+        },
+        {
+            "division": 3,
+            "seed": "17",
+            "name": "Aleixofempires",
+            "discord": "Aleixofempires#0705",
+            "avgELO": "1448.5",
+            "aoe2net": "https://aoe2.net/#profile-2269631"
+        },
+        {
+            "division": 3,
+            "seed": "18",
+            "name": "[R1] Alchemist_28 ",
+            "discord": "Alchemist_28#4332",
+            "avgELO": "1408",
+            "aoe2net": "https://aoe2.net/#profile-281756"
+        },
+        {
+            "division": 3,
+            "seed": "19",
+            "name": "De4thproject",
+            "discord": "De4thproject#4033",
+            "avgELO": "1435",
+            "aoe2net": "https://aoe2.net/#profile-1895465"
+        },
+        {
+            "division": 3,
+            "seed": "20",
+            "name": "Yakoileo",
+            "discord": "Yakoileo#5310",
+            "avgELO": "1432.5",
+            "aoe2net": "https://aoe2.net/#profile-2733807"
+        },
+        {
+            "division": 3,
+            "seed": "21",
+            "name": "manudq85",
+            "discord": "Manudq#8758",
+            "avgELO": "1423",
+            "aoe2net": "https://aoe2.net/#profile-5043635"
+        },
+        {
+            "division": 3,
+            "seed": "22",
+            "name": "Rioukay",
+            "discord": "Rioukay#8248",
+            "avgELO": "1402",
+            "aoe2net": "https://aoe2.net/#profile-510009"
+        },
+        {
+            "division": 4,
+            "seed": "1",
+            "name": "Verlok",
+            "discord": "Verlok#9993",
+            "avgELO": "1431",
+            "aoe2net": "https://aoe2.net/#profile-221226"
+        },
+        {
+            "division": 4,
+            "seed": "2",
+            "name": "[CONQUIS] Menerell",
+            "discord": "Menerell#5722",
+            "avgELO": "1320",
+            "aoe2net": "https://aoe2.net/#profile-2496721"
+        },
+        {
+            "division": 4,
+            "seed": "3",
+            "name": "[CONQUIS] Natsu",
+            "discord": "[CONQUIS] Natsu#1817",
+            "avgELO": "1274.5",
+            "aoe2net": "https://aoe2.net/#profile-214269"
+        },
+        {
+            "division": 4,
+            "seed": "4",
+            "name": "Chencho Corleone",
+            "discord": "ziccarelli#8945",
+            "avgELO": "1351.5",
+            "aoe2net": "https://aoe2.net/#profile-5404509"
+        },
+        {
+            "division": 4,
+            "seed": "5",
+            "name": "TM_TOGAMI",
+            "discord": "TM TOGAMI#7202",
+            "avgELO": "1336.5",
+            "aoe2net": "https://aoe2.net/#profile-2566703"
+        },
+        {
+            "division": 4,
+            "seed": "6",
+            "name": "craser09",
+            "discord": "craser09#1040",
+            "avgELO": "1360",
+            "aoe2net": "https://aoe2.net/#profile-1215896"
+        },
+        {
+            "division": 4,
+            "seed": "7",
+            "name": "[OBJA] S I D I",
+            "discord": "S I D I#8752",
+            "avgELO": "1310.5",
+            "aoe2net": "https://aoe2.net/#profile-2523869"
+        },
+        {
+            "division": 4,
+            "seed": "8",
+            "name": "OldFather",
+            "discord": "OldFather#4135",
+            "avgELO": "1300.5",
+            "aoe2net": "https://aoe2.net/#profile-27018"
+        },
+        {
+            "division": 4,
+            "seed": "9",
+            "name": "Quique92",
+            "discord": "kikiti#6578",
+            "avgELO": "1305.5",
+            "aoe2net": "https://aoe2.net/#profile-1007989"
+        },
+        {
+            "division": 4,
+            "seed": "10",
+            "name": "Murturul",
+            "discord": "Murturul#1236",
+            "avgELO": "1398",
+            "aoe2net": "https://aoe2.net/#profile-382573"
+        },
+        {
+            "division": 4,
+            "seed": "11",
+            "name": "ÉoMeR",
+            "discord": "ÉoMeR#4006",
+            "avgELO": "1435.5",
+            "aoe2net": "https://aoe2.net/#profile-2199349"
+        },
+        {
+            "division": 4,
+            "seed": "12",
+            "name": "DS_Lip",
+            "discord": "Lip#3288",
+            "avgELO": "1440.5",
+            "aoe2net": "https://aoe2.net/#profile-3905401"
+        },
+        {
+            "division": 4,
+            "seed": "13",
+            "name": "Juececito CT",
+            "discord": "Juececito#1321",
+            "avgELO": "1378.5",
+            "aoe2net": "https://aoe2.net/#profile-1262343"
+        },
+        {
+            "division": 4,
+            "seed": "14",
+            "name": "Twitch.tv/Joavetorr",
+            "discord": "Joavetor#0629",
+            "avgELO": "1487",
+            "aoe2net": "https://aoe2.net/#profile-4402189"
+        },
+        {
+            "division": 4,
+            "seed": "15",
+            "name": "DK_TheNovack",
+            "discord": "TheNovack#2648",
+            "avgELO": "1380",
+            "aoe2net": "https://aoe2.net/#profile-264709"
+        },
+        {
+            "division": 4,
+            "seed": "16",
+            "name": "MarcAOE",
+            "discord": "MarcAOE#4309",
+            "avgELO": "1362",
+            "aoe2net": "https://aoe2.net/#profile-2278754"
+        },
+        {
+            "division": 4,
+            "seed": "17",
+            "name": "vagos.fran",
+            "discord": "lord frangog#1077",
+            "avgELO": "1355",
+            "aoe2net": "https://aoe2.net/#profile-2836315"
+        },
+        {
+            "division": 4,
+            "seed": "18",
+            "name": "[R1] Comte Álex",
+            "discord": "Álex#9434",
+            "avgELO": "1330",
+            "aoe2net": "https://aoe2.net/#profile-424656"
+        },
+        {
+            "division": 4,
+            "seed": "19",
+            "name": "DK_MaCiro",
+            "discord": "Maciro#2430",
+            "avgELO": "1292",
+            "aoe2net": "https://aoe2.net/#profile-2281878"
+        },
+        {
+            "division": 4,
+            "seed": "20",
+            "name": "aitorcuesta",
+            "discord": "mentefria29#9073",
+            "avgELO": "1285.5",
+            "aoe2net": "https://aoe2.net/#profile-2845394"
+        },
+        {
+            "division": 4,
+            "seed": "21",
+            "name": "[CONQUIS] Toté",
+            "discord": "Toté#7792",
+            "avgELO": "1306",
+            "aoe2net": "https://aoe2.net/#profile-3573869"
+        },
+        {
+            "division": 4,
+            "seed": "22",
+            "name": "DK_Cid Campeador",
+            "discord": "Cid Campeador#3979",
+            "avgELO": "1277.5",
+            "aoe2net": "https://aoe2.net/#profile-2599637"
+        },
+        {
+            "division": 5,
+            "seed": "1",
+            "name": "Montix",
+            "discord": "Montix#3110",
+            "avgELO": "1231.5",
+            "aoe2net": "https://aoe2.net/#profile-984133"
+        },
+        {
+            "division": 5,
+            "seed": "2",
+            "name": "caste",
+            "discord": "Caste#3484",
+            "avgELO": "1295",
+            "aoe2net": "https://aoe2.net/#profile-824070"
+        },
+        {
+            "division": 5,
+            "seed": "3",
+            "name": "[OBJA] Huracan Parre",
+            "discord": "Huracan_Parre#2022",
+            "avgELO": "1131.5",
+            "aoe2net": "https://aoe2.net/#profile-2604970"
+        },
+        {
+            "division": 5,
+            "seed": "4",
+            "name": "[OBJA] carrascorno",
+            "discord": "carrascorno#3970",
+            "avgELO": "1209.5",
+            "aoe2net": "https://aoe2.net/#profile-3124947"
+        },
+        {
+            "division": 5,
+            "seed": "5",
+            "name": "rudyairlines",
+            "discord": "DK_rudyairlines#6990",
+            "avgELO": "1211.5",
+            "aoe2net": "https://aoe2.net/#profile-2308948"
+        },
+        {
+            "division": 5,
+            "seed": "6",
+            "name": "Comunero Padilla",
+            "discord": "Comunero_Padilla#8872",
+            "avgELO": "1188",
+            "aoe2net": "https://aoe2.net/#profile-3450823"
+        },
+        {
+            "division": 5,
+            "seed": "7",
+            "name": "AO_Bethor",
+            "discord": "AO_Bethor#2350",
+            "avgELO": "1299.5",
+            "aoe2net": "https://aoe2.net/#profile-2574105"
+        },
+        {
+            "division": 5,
+            "seed": "8",
+            "name": "Poyardo de Élite (Nando AoE)",
+            "discord": "Jessykawaii#7174",
+            "avgELO": "1297",
+            "aoe2net": "https://aoe2.net/#profile-5955987"
+        },
+        {
+            "division": 5,
+            "seed": "9",
+            "name": "PinoXO",
+            "discord": "PinoXO#6946",
+            "avgELO": "1296",
+            "aoe2net": "https://aoe2.net/#profile-2024665"
+        },
+        {
+            "division": 5,
+            "seed": "10",
+            "name": "Auron_XII",
+            "discord": "Auron#7535",
+            "avgELO": "1299.5",
+            "aoe2net": "https://aoe2.net/#profile-1379778"
+        },
+        {
+            "division": 5,
+            "seed": "11",
+            "name": "Rey Fer",
+            "discord": "Rey Fer#1026",
+            "avgELO": "1275",
+            "aoe2net": "https://aoe2.net/#profile-235558"
+        },
+        {
+            "division": 5,
+            "seed": "12",
+            "name": "[Printers] JaGu4R",
+            "discord": "Samu_Caos#7770",
+            "avgELO": "1286",
+            "aoe2net": "https://aoe2.net/#profile-2868574"
+        },
+        {
+            "division": 5,
+            "seed": "13",
+            "name": "elantesmenteconocidocomokekojones",
+            "discord": "kekeros#1711",
+            "avgELO": "1279.5",
+            "aoe2net": "https://aoe2.net/#profile-985424"
+        },
+        {
+            "division": 5,
+            "seed": "14",
+            "name": "Hole In Your Wall",
+            "discord": "Hole In Your Wall#5654",
+            "avgELO": "1297",
+            "aoe2net": "https://aoe2.net/#profile-1973841"
+        },
+        {
+            "division": 5,
+            "seed": "15",
+            "name": "Han",
+            "discord": "Han#3442",
+            "avgELO": "1247.5",
+            "aoe2net": "https://aoe2.net/#profile-2152015"
+        },
+        {
+            "division": 5,
+            "seed": "16",
+            "name": "Salabino",
+            "discord": "Salabino#7586",
+            "avgELO": "1238",
+            "aoe2net": "https://aoe2.net/#profile-3375501"
+        },
+        {
+            "division": 5,
+            "seed": "17",
+            "name": "Unum",
+            "discord": "unum##8069",
+            "avgELO": "1209.5",
+            "aoe2net": "https://aoe2.net/#profile-1991092"
+        },
+        {
+            "division": 5,
+            "seed": "18",
+            "name": "Faikonnen",
+            "discord": "riubanez#2448",
+            "avgELO": "1219",
+            "aoe2net": "https://aoe2.net/#profile-2336901"
+        },
+        {
+            "division": 5,
+            "seed": "19",
+            "name": "Elbul Garito",
+            "discord": "Elbul Garito#4350",
+            "avgELO": "1231",
+            "aoe2net": "https://aoe2.net/#profile-4323388"
+        },
+        {
+            "division": 5,
+            "seed": "20",
+            "name": "Mr.Danger",
+            "discord": "MrDanger#2058",
+            "avgELO": "1208",
+            "aoe2net": "https://aoe2.net/#profile-238849"
+        },
+        {
+            "division": 6,
+            "seed": "1",
+            "name": "Opposite Pool",
+            "discord": "Oppositepol#0815",
+            "avgELO": "1346.5",
+            "aoe2net": "https://aoe2.net/#profile-1885074"
+        },
+        {
+            "division": 6,
+            "seed": "2",
+            "name": "juanjo_gp92",
+            "discord": "juanjosevilla92#6929",
+            "avgELO": "1224",
+            "aoe2net": "https://aoe2.net/#profile-4117845"
+        },
+        {
+            "division": 6,
+            "seed": "3",
+            "name": "Rosendo",
+            "discord": "Rosendo#5562",
+            "avgELO": "1185",
+            "aoe2net": "https://aoe2.net/#profile-2249000"
+        },
+        {
+            "division": 6,
+            "seed": "4",
+            "name": "migueltrc",
+            "discord": "miguelitro2305#5250",
+            "avgELO": "1160.5",
+            "aoe2net": "https://aoe2.net/#profile-2606932"
+        },
+        {
+            "division": 6,
+            "seed": "5",
+            "name": "PabloN",
+            "discord": "PabloN92#8653",
+            "avgELO": "1214.5",
+            "aoe2net": "https://aoe2.net/#profile-2143941"
+        },
+        {
+            "division": 6,
+            "seed": "6",
+            "name": "siEp's",
+            "discord": "siEp_s#4211",
+            "avgELO": "1113.5",
+            "aoe2net": "https://aoe2.net/#profile-1496402"
+        },
+        {
+            "division": 6,
+            "seed": "7",
+            "name": "Kostamudic",
+            "discord": "Kostamudic#6542",
+            "avgELO": "1222.5",
+            "aoe2net": "https://aoe2.net/#profile-2522415"
+        },
+        {
+            "division": 6,
+            "seed": "8",
+            "name": "Dios Cuenca",
+            "discord": "SOTL Cuenca #3153",
+            "avgELO": "1140",
+            "aoe2net": "https://aoe2.net/#profile-3286377"
+        },
+        {
+            "division": 6,
+            "seed": "9",
+            "name": "[UDGes] X@v!K",
+            "discord": "Xavit0#4944",
+            "avgELO": "1086",
+            "aoe2net": "https://aoe2.net/#profile-255793"
+        },
+        {
+            "division": 6,
+            "seed": "10",
+            "name": "KorKo",
+            "discord": "KorKo_11 #3811",
+            "avgELO": "990",
+            "aoe2net": "https://aoe2.net/#profile-4456415"
+        },
+        {
+            "division": 6,
+            "seed": "11",
+            "name": "boarding87",
+            "discord": "boarding87#5494",
+            "avgELO": "1104",
+            "aoe2net": "https://aoe2.net/#profile-1923151"
+        },
+        {
+            "division": 6,
+            "seed": "12",
+            "name": "TITOF",
+            "discord": "TITOF#3410",
+            "avgELO": "1084",
+            "aoe2net": "https://aoe2.net/#profile-2548076"
+        },
+        {
+            "division": 6,
+            "seed": "13",
+            "name": "Rumbals",
+            "discord": "seribs#6496",
+            "avgELO": "1216",
+            "aoe2net": "https://aoe2.net/#profile-5848116"
+        },
+        {
+            "division": 6,
+            "seed": "14",
+            "name": "Lezus",
+            "discord": "Lezus#0665",
+            "avgELO": "1204",
+            "aoe2net": "https://aoe2.net/#profile-238279"
+        },
+        {
+            "division": 6,
+            "seed": "15",
+            "name": "ElAzkar",
+            "discord": "azkar#4402",
+            "avgELO": "1196",
+            "aoe2net": "https://aoe2.net/#profile-4409904"
+        },
+        {
+            "division": 6,
+            "seed": "16",
+            "name": "Max Power",
+            "discord": "Max Power#9777",
+            "avgELO": "1191.5",
+            "aoe2net": "https://aoe2.net/#profile-1002438"
+        },
+        {
+            "division": 6,
+            "seed": "17",
+            "name": "[CONQUIS] Xokobo",
+            "discord": "xokobo#3187",
+            "avgELO": "1174",
+            "aoe2net": "https://aoe2.net/#profile-846959"
+        },
+        {
+            "division": 6,
+            "seed": "18",
+            "name": "MANKEANDO_ARQUERITOS",
+            "discord": "julianleg#3895",
+            "avgELO": "1187.5",
+            "aoe2net": "https://aoe2.net/#profile-5284869"
+        },
+        {
+            "division": 6,
+            "seed": "19",
+            "name": "vikman85",
+            "discord": "vikman85#7217",
+            "avgELO": "1140.5",
+            "aoe2net": "https://aoe2.net/#profile-5044889"
+        },
+        {
+            "division": 6,
+            "seed": "20",
+            "name": "FALETE",
+            "discord": "MARIORUDE#5070",
+            "avgELO": "1170",
+            "aoe2net": "https://aoe2.net/#profile-2176432"
+        },
+        {
+            "division": 6,
+            "seed": "21",
+            "name": "[LA9NA] Charli_Ros",
+            "discord": "Charli_Ros#5206",
+            "avgELO": "1161",
+            "aoe2net": "https://aoe2.net/#profile-2465138"
+        },
+        {
+            "division": 6,
+            "seed": "22",
+            "name": "MJustice",
+            "discord": "MJustice#3331",
+            "avgELO": "1106",
+            "aoe2net": "https://aoe2.net/#profile-254920"
+        },
+        {
+            "division": 7,
+            "seed": "1",
+            "name": "[OBJA] MDkaiserotto",
+            "discord": "MDkaiserotto#2260",
+            "avgELO": "1073.5",
+            "aoe2net": "https://aoe2.net/#profile-3126202"
+        },
+        {
+            "division": 7,
+            "seed": "2",
+            "name": "Alfi_hakkinen",
+            "discord": "alfonso#3994",
+            "avgELO": "793",
+            "aoe2net": "https://aoe2.net/#profile-2369193"
+        },
+        {
+            "division": 7,
+            "seed": "3",
+            "name": "dsaenz.dc",
+            "discord": "iluvatar#4589",
+            "avgELO": "1116.5",
+            "aoe2net": "https://aoe2.net/#profile-1881530"
+        },
+        {
+            "division": 7,
+            "seed": "4",
+            "name": "Hocicofregao_treyRINI",
+            "discord": "Hocicofregao_treyRINI#7549",
+            "avgELO": "1061.5",
+            "aoe2net": "https://aoe2.net/#profile-3390212"
+        },
+        {
+            "division": 7,
+            "seed": "5",
+            "name": "[DR] galaaz89",
+            "discord": "Galahaz89#5804",
+            "avgELO": "1039",
+            "aoe2net": "https://aoe2.net/#profile-4139573"
+        },
+        {
+            "division": 7,
+            "seed": "6",
+            "name": "robertvr",
+            "discord": "Robertvr#6584",
+            "avgELO": "1131",
+            "aoe2net": "https://aoe2.net/#profile-1164757"
+        },
+        {
+            "division": 7,
+            "seed": "7",
+            "name": "Lordcitas",
+            "discord": "Lord Citas#6488",
+            "avgELO": "1053",
+            "aoe2net": "https://aoe2.net/#profile-1919418"
+        },
+        {
+            "division": 7,
+            "seed": "8",
+            "name": "Lord dekko",
+            "discord": "dekko89#3017",
+            "avgELO": "1058.5",
+            "aoe2net": "https://aoe2.net/#profile-4574855"
+        },
+        {
+            "division": 7,
+            "seed": "9",
+            "name": "ReaL",
+            "discord": "ReaL#4860",
+            "avgELO": "1100.5",
+            "aoe2net": "https://aoe2.net/#profile-2631768"
+        },
+        {
+            "division": 7,
+            "seed": "10",
+            "name": "0iram",
+            "discord": "0iram#9957",
+            "avgELO": "1084",
+            "aoe2net": "https://aoe2.net/#profile-2599738"
+        },
+        {
+            "division": 7,
+            "seed": "11",
+            "name": "aaamigo",
+            "discord": "ERgarra#8434",
+            "avgELO": "1082",
+            "aoe2net": "https://aoe2.net/#profile-5406290"
+        },
+        {
+            "division": 7,
+            "seed": "12",
+            "name": "marr0w",
+            "discord": "marro0w#7704",
+            "avgELO": "1042",
+            "aoe2net": "https://aoe2.net/#profile-5288844"
+        },
+        {
+            "division": 7,
+            "seed": "13",
+            "name": "electrocollider",
+            "discord": "Electrocollider#9824",
+            "avgELO": "1117",
+            "aoe2net": "https://aoe2.net/#profile-3232000"
+        },
+        {
+            "division": 7,
+            "seed": "14",
+            "name": "seronoser397",
+            "discord": "seronoser397#6009",
+            "avgELO": "1151.5",
+            "aoe2net": "https://aoe2.net/#profile-2887868"
+        },
+        {
+            "division": 7,
+            "seed": "15",
+            "name": "MustyTooth41511",
+            "discord": "VimaraPeres#9049",
+            "avgELO": "1072",
+            "aoe2net": "https://aoe2.net/#profile-3106163"
+        },
+        {
+            "division": 7,
+            "seed": "16",
+            "name": "TXUMA",
+            "discord": "TXUMA#3984",
+            "avgELO": "1099",
+            "aoe2net": "https://aoe2.net/#profile-2654401"
+        },
+        {
+            "division": 7,
+            "seed": "17",
+            "name": "[CONQUIS] Willy",
+            "discord": "guille#2776",
+            "avgELO": "1080",
+            "aoe2net": "https://aoe2.net/#profile-4270007"
+        },
+        {
+            "division": 7,
+            "seed": "18",
+            "name": "[TdBar] Bronnn",
+            "discord": "Bronnnnnnn#1277",
+            "avgELO": "1044.5",
+            "aoe2net": "https://aoe2.net/#profile-1944193"
+        },
+        {
+            "division": 7,
+            "seed": "19",
+            "name": "stroke",
+            "discord": "waldrop89#9912",
+            "avgELO": "1040.5",
+            "aoe2net": "https://aoe2.net/#profile-2956518"
+        },
+        {
+            "division": 7,
+            "seed": "20",
+            "name": "EELARABE",
+            "discord": "Eelarabe#4355",
+            "avgELO": "1023",
+            "aoe2net": "https://aoe2.net/#profile-6095916"
+        },
+        {
+            "division": 7,
+            "seed": "21",
+            "name": "CORP_ciruelitaruby",
+            "discord": "nekane90#5567",
+            "avgELO": "1061",
+            "aoe2net": "https://aoe2.net/#profile-2811441"
+        },
+        {
+            "division": 7,
+            "seed": "22",
+            "name": "Joseba77",
+            "discord": "joseba#4687",
+            "avgELO": "1004",
+            "aoe2net": "https://aoe2.net/#profile-4279580"
+        },
+        {
+            "division": 8,
+            "seed": "1",
+            "name": "Optimusprime5.0",
+            "discord": "Optimusprime8.0#9789",
+            "avgELO": "1028",
+            "aoe2net": "https://aoe2.net/#profile-1818835"
+        },
+        {
+            "division": 8,
+            "seed": "2",
+            "name": "Tito_96",
+            "discord": "javier.merino88#9760",
+            "avgELO": "1007",
+            "aoe2net": "https://aoe2.net/#profile-1039889"
+        },
+        {
+            "division": 8,
+            "seed": "3",
+            "name": "[VPKT] Eliathan",
+            "discord": "Eliahtan#8406",
+            "avgELO": "1007",
+            "aoe2net": "https://aoe2.net/#profile-2775595"
+        },
+        {
+            "division": 8,
+            "seed": "4",
+            "name": "[CONQUIS] Eloy_",
+            "discord": "Eloy_ph#3279",
+            "avgELO": "1004",
+            "aoe2net": "https://aoe2.net/#profile-4184538"
+        },
+        {
+            "division": 8,
+            "seed": "5",
+            "name": "Sergio Cid Alfaro",
+            "discord": "SergioCidAlfaro#4115",
+            "avgELO": "1015",
+            "aoe2net": "https://aoe2.net/#profile-4994188"
+        },
+        {
+            "division": 8,
+            "seed": "6",
+            "name": "[CONQUIS] azurunico",
+            "discord": "azurunico#5764",
+            "avgELO": "993.5",
+            "aoe2net": "https://aoe2.net/#profile-1919229"
+        },
+        {
+            "division": 8,
+            "seed": "7",
+            "name": "soujacobo",
+            "discord": "soujacobo#9466",
+            "avgELO": "997",
+            "aoe2net": "https://aoe2.net/#profile-966725"
+        },
+        {
+            "division": 8,
+            "seed": "8",
+            "name": "Sauri17",
+            "discord": "Sauri17#2636",
+            "avgELO": "1025",
+            "aoe2net": "https://aoe2.net/#profile-374878"
+        },
+        {
+            "division": 8,
+            "seed": "9",
+            "name": "Guilleluis96",
+            "discord": "Guilleluis#8342",
+            "avgELO": "979",
+            "aoe2net": "https://aoe2.net/#profile-2519493"
+        },
+        {
+            "division": 8,
+            "seed": "10",
+            "name": "Yagobp86",
+            "discord": "Yagobp86#3047",
+            "avgELO": "963.5",
+            "aoe2net": "https://aoe2.net/#profile-2143991"
+        },
+        {
+            "division": 8,
+            "seed": "11",
+            "name": "fran.paz",
+            "discord": "fpaz#8137",
+            "avgELO": "956",
+            "aoe2net": "https://aoe2.net/#profile-1437664"
+        },
+        {
+            "division": 8,
+            "seed": "12",
+            "name": "AC26Iron",
+            "discord": "AC26Iron#9240",
+            "avgELO": "945.5",
+            "aoe2net": "https://aoe2.net/#profile-4098649"
+        },
+        {
+            "division": 8,
+            "seed": "13",
+            "name": "Nach",
+            "discord": "NaXe#7743",
+            "avgELO": "903.5",
+            "aoe2net": "https://aoe2.net/#profile-2609367"
+        },
+        {
+            "division": 8,
+            "seed": "14",
+            "name": "Su1z0",
+            "discord": "BRAKO_32YT#8231",
+            "avgELO": "899.5",
+            "aoe2net": "https://aoe2.net/#profile-3156270"
+        },
+        {
+            "division": 8,
+            "seed": "15",
+            "name": "DSR1984 ",
+            "discord": "OmsiBusSoundGarage#2653",
+            "avgELO": "801.5",
+            "aoe2net": "https://aoe2.net/#profile-900925"
+        },
+        {
+            "division": 8,
+            "seed": "16",
+            "name": "n4guetin",
+            "discord": "naguetinho#6436",
+            "avgELO": "808.5",
+            "aoe2net": "https://aoe2.net/#profile-2052163"
+        },
+        {
+            "division": 8,
+            "seed": "17",
+            "name": "Miguigomezalonso.mg",
+            "discord": "miguizizu#8862",
+            "avgELO": "766",
+            "aoe2net": "https://aoe2.net/#profile-3233181"
+        },
+        {
+            "division": 8,
+            "seed": "18",
+            "name": "espi_54",
+            "discord": "Jespi6#8642",
+            "avgELO": "812",
+            "aoe2net": "https://aoe2.net/#profile-5229064"
+        },
+        {
+            "division": 8,
+            "seed": "19",
+            "name": "puretapro",
+            "discord": "puretapro#6561",
+            "avgELO": "711",
+            "aoe2net": "https://aoe2.net/#profile-6281277"
+        },
+        {
+            "division": 8,
+            "seed": "20",
+            "name": "Ham_brosio",
+            "discord": "Hank#7875",
+            "avgELO": "904.5",
+            "aoe2net": "https://aoe2.net/#profile-5162426"
+        }
+    ]
+}
