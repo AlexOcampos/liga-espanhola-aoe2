@@ -32,7 +32,11 @@ const Player = ({ player }) => {
             alt={divisionName}
             title={divisionName}
           />
-          <span>{name}</span>
+
+          <span className="player-web">{name}</span>
+          <span className="player-mobile">
+            {name.length > 20 ? `${name.slice(0, 20)}...` : name}
+          </span>
         </div>
         <div className="elo-info">
           <span>Seed: {seed}</span>
@@ -80,11 +84,12 @@ const Wrapper = styled.article`
   padding: 8px;
 
   .player {
-    width: 40px;
     display: flex;
   }
 
   .player img {
+    width: 40px;
+    height: 40px;
     margin: 0;
     margin-right: 8px;
   }
@@ -93,6 +98,10 @@ const Wrapper = styled.article`
     display: flex;
     align-items: center;
     font-weight: bold;
+  }
+
+  .player-mobile {
+    display: none !important;
   }
 
   .elo-info span {
@@ -148,6 +157,21 @@ const Wrapper = styled.article`
   }
   .aoe2net span {
     margin-right: 4px;
+  }
+
+  @media (max-width: 600px) {
+    .player-web {
+      display: none !important;
+    }
+    .player-mobile {
+      display: flex !important;
+    }
+    .discord span {
+      display: none;
+    }
+    .aoe2net span {
+      display: none;
+    }
   }
 `;
 

@@ -8,6 +8,10 @@
 - Players list
 - About us
 
+### 1.0.1
+
+- Fix long player names
+
 ## Available Scripts
 
 In the project directory, you can run:
