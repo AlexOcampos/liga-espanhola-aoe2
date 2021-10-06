@@ -1,10 +1,20 @@
-# Getting Started with Create React App
+# Web site Liga Española AoE2
 
-Web site Liga Española AoE2
+## Changelog
+
+### 1.0.0
+
+- Season 3 info
+- Players list
+- About us
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Prepare the project to be running
 
 ### `npm start`
 
