@@ -17,9 +17,9 @@ const Hero = () => {
       <article className="x3">
         <h3>Temporada 3</h3>
         <p>¿Cuándo juego? ¿Cuál es mi división? Aquí tienes toda la info.</p>
-        <button className="btn">
-          <Link to="temporada-3">Info T3</Link>
-        </button>
+        <Link to="temporada-3">
+          <button className="btn">Info T3</button>
+        </Link>
         <img src={hero1} alt="background 1" />
       </article>
       {/* <article className="x1">
