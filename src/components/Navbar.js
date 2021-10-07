@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assets/lea_logo.png";
+import twitter from "../assets/twitter.jpg";
+import discord from "../assets/discord_color.jpg";
 import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import styled from "styled-components";
@@ -8,6 +10,8 @@ import { useNavContext } from "../context/nav_context";
 import { useLocation } from "react-router-dom";
 
 const Nav = () => {
+  const twitterUrl = "https://twitter.com/Aoe2LigaESP";
+  const discordUrl = "https://discord.gg/cK9ZgpfH";
   const location = useLocation();
   const url = links.filter((link) => link.url === location.pathname);
 
@@ -53,6 +57,18 @@ const Nav = () => {
                 );
               })}
             </ul>
+            <div className="social">
+              <img
+                src={twitter}
+                alt="twitter"
+                onClick={() => window.open(twitterUrl, "_blank")}
+              />
+              <img
+                src={discord}
+                alt="discord"
+                onClick={() => window.open(discordUrl, "_blank")}
+              />
+            </div>
           </div>
         </header>
       </div>
@@ -126,6 +142,12 @@ const NavContainer = styled.nav`
         }
       }
     }
+  }
+
+  .social img {
+    width: 2rem;
+    cursor: pointer;
+    margin: 0.5rem;
   }
 `;
 

@@ -451,10 +451,11 @@
         {
             "division": 3,
             "seed": "13",
-            "name": "Alex_vazquez99",
-            "discord": "alex_vazquez99#3360",
-            "avgELO": "937",
-            "aoe2net": "https://aoe2.net/#profile-1787450"
+            "name": "Palad1n_k4os",
+            "replacedPlayer": "Alex_vazquez99",
+            "discord": "Gabridiaz#8880",
+            "avgELO": "1422.5",
+            "aoe2net": "https://aoe2.net/#profile-3560202"
         },
         {
             "division": 3,
@@ -707,10 +708,11 @@
         {
             "division": 5,
             "seed": "1",
-            "name": "Montix",
-            "discord": "Montix#3110",
-            "avgELO": "1231.5",
-            "aoe2net": "https://aoe2.net/#profile-984133"
+            "name": "@genio_hispano",
+            "discord": "Genio Hispano#7104",
+            "replacedPlayer": "Montix",
+            "avgELO": "1228",
+            "aoe2net": "https://aoe2.net/#profile-256863"
         },
         {
             "division": 5,
