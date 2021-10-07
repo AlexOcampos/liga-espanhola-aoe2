@@ -14,7 +14,7 @@ const Hero = () => {
 
   return (
     <Wrapper className="section-center">
-      <article className="x3">
+      <article className="x2">
         <h3>Temporada 3</h3>
         <p>¿Cuándo juego? ¿Cuál es mi división? Aquí tienes toda la info.</p>
         <Link to="temporada-3">
@@ -22,18 +22,18 @@ const Hero = () => {
         </Link>
         <img src={hero1} alt="background 1" />
       </article>
-      {/* <article className="x1">
+      <article className="x1">
         <h3>Partidas destacadas</h3>
         <p>
           Cada día los streamers con los que tenemos acuerdo seleccionan las
           mejores partidas y las retransmiten en sus canales. ¿Quieres verlas y
           apoyar a tus jugadores favoritos?
         </p>
-        <button className="btn" onClick={() => goToToornament()}>
-          Destacados
-        </button>
+        <Link to="/featured-games">
+          <button className="btn">Destacados</button>
+        </Link>
         <img src={hero2} alt="background 2" />
-      </article> */}
+      </article>
     </Wrapper>
   );
 };

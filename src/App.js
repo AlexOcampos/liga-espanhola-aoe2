@@ -3,7 +3,15 @@ import "./App.css";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Navbar, Footer, Notification, Sidebar } from "./components";
-import { Error, Home, About, Players, Temp3, Temp4 } from "./pages/index";
+import {
+  Error,
+  Home,
+  About,
+  Players,
+  Temp3,
+  Temp4,
+  FeaturedGames,
+} from "./pages/index";
 
 function App() {
   return (
@@ -26,6 +34,9 @@ function App() {
         </Route>
         <Route exact path="/temporada-4">
           <Temp4 />
+        </Route>
+        <Route exact path="/featured-games">
+          <FeaturedGames />
         </Route>
         <Route exact path="*">
           <Error />
