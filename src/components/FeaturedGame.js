@@ -33,7 +33,13 @@ const FeaturedGame = ({ match }) => {
       <div className="caster" onClick={() => window.open(casterUrl, "_blank")}>
         <span>{caster}</span>
         <img
-          src={casterPlatform === "twitch" ? twitchLogo : youtubeLogo}
+          src={
+            casterPlatform === "twitch"
+              ? twitchLogo
+              : casterPlatform === "youtube"
+              ? youtubeLogo
+              : ""
+          }
           alt={caster}
         />
       </div>
