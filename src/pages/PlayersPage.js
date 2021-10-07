@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import Player from "../components/Player";
 import { players } from "../utils/players-t3.json";
+
+import { Filters, Player } from "../components";
 
 const PlayersPage = () => {
   return (
@@ -22,6 +23,7 @@ const PlayersPage = () => {
             El ELO medio se ha calculado con la siguiente fórmula: (ELO actual +
             ELO máximo) / 2
           </p>
+          <Filters />
         </div>
         <div>
           {players.map((player) => {
