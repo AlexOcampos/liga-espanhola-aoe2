@@ -75,6 +75,26 @@ const Wrapper = styled.section`
   article.x3 {
     width: 100%;
   }
+
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+
+    article {
+      margin: 0rem;
+      margin-top: 1rem;
+    }
+
+    article.x1 {
+      width: 100%;
+    }
+    article.x2 {
+      width: 100%;
+    }
+    article.x3 {
+      width: 100%;
+    }
+  }
 `;
 
 export default Hero;

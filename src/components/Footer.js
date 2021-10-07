@@ -9,7 +9,7 @@ const Footer = () => {
           <span> Liga Española AoE</span>
         </h5>
         <h5>All rights reserved</h5>
-        <h5>v. 1.1.2</h5>
+        <h5>v. 1.1.3</h5>
       </div>
       <div className="row">
         <p>Developed by rudyairlines</p>

@@ -149,6 +149,12 @@ const NavContainer = styled.nav`
     cursor: pointer;
     margin: 0.5rem;
   }
+
+  @media (max-width: 600px) {
+    .social {
+      display: none;
+    }
+  }
 `;
 
 export default Nav;
