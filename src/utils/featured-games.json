@@ -11,15 +11,6 @@
             "casterUrl": "https://www.twitch.tv/siep_s"
         },
         {
-            "hour": "20:20",
-            "playerA": "Madearrea",
-            "playerB": "[Printers] JaGu4R",
-            "division": 5,
-            "caster": "siep_s",
-            "casterPlatform": "twitch",
-            "casterUrl": "https://www.twitch.tv/siep_s"
-        },
-        {
             "hour": "18:30",
             "playerA": "aaamigo",
             "playerB": "Bronn",
@@ -27,6 +18,15 @@
             "caster": "hocicofregao_treyrini",
             "casterPlatform": "twitch",
             "casterUrl": "https://www.twitch.tv/hocicofregao_treyrini"
+        },
+        {
+            "hour": "20:20",
+            "playerA": "Madearrea",
+            "playerB": "[Printers] JaGu4R",
+            "division": 5,
+            "caster": "",
+            "casterPlatform": "",
+            "casterUrl": ""
         }
     ]
 }
