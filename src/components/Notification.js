@@ -3,8 +3,8 @@ import styled from "styled-components";
 const Notification = () => {
   return (
     <Wrapper>
-      En curso la Jornada 1.
-      <span>Finaliza el Miércoles 06/Oct/2020 a las 23:59!</span>
+      En curso la Jornada 2.
+      <span>Finaliza el Miércoles 13/Oct/2020 a las 23:59!</span>
     </Wrapper>
   );
 };
