@@ -27,7 +27,9 @@ const FeaturedGame = ({ match }) => {
           <b>{hour}</b>
         </span>
         <span>
-          <b>{playerA}</b> vs <b>{playerB}</b>
+          <b>{playerA.length > 20 ? `${playerA.slice(0, 20)}...` : playerA}</b>{" "}
+          vs{" "}
+          <b>{playerB.length > 20 ? `${playerB.slice(0, 20)}...` : playerB}</b>
         </span>
       </div>
       <div className="caster" onClick={() => window.open(casterUrl, "_blank")}>
@@ -84,6 +86,23 @@ const Wrapper = styled.div`
   }
   .caster span {
     margin-right: 0.5rem;
+  }
+
+  @media (max-width: 600px) {
+    margin: 8px;
+    span {
+      margin-right: 0.5rem;
+    }
+
+    .match-info img {
+      width: 48px;
+      margin: 0;
+      margin-right: 0.5rem;
+    }
+
+    .caster span {
+      display: none;
+    }
   }
 `;
 

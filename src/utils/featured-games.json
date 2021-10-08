@@ -1,32 +1,41 @@
 {
-    "date": "Jueves 07/Oct",
+    "date": "Viernes 08/Oct",
     "matches": [
         {
-            "hour": "16:00",
-            "playerA": "TaToH",
-            "playerB": "pau795",
-            "division": 1,
+            "hour": "11:00",
+            "playerA": "TXUMA",
+            "playerB": "Hocicofregao_treyRINI",
+            "division": 7,
             "caster": "siep_s",
             "casterPlatform": "twitch",
             "casterUrl": "https://www.twitch.tv/siep_s"
         },
         {
-            "hour": "18:30",
-            "playerA": "aaamigo",
-            "playerB": "Bronn",
+            "hour": "17:30",
+            "playerA": "marr0w",
+            "playerB": "Alfi_hakkinen",
             "division": 7,
-            "caster": "hocicofregao_treyrini",
+            "caster": "siep_s",
             "casterPlatform": "twitch",
-            "casterUrl": "https://www.twitch.tv/hocicofregao_treyrini"
+            "casterUrl": "https://www.twitch.tv/siep_s"
         },
         {
-            "hour": "20:20",
-            "playerA": "Madearrea",
-            "playerB": "[Printers] JaGu4R",
-            "division": 5,
-            "caster": "",
-            "casterPlatform": "",
-            "casterUrl": ""
+            "hour": "20:00",
+            "playerA": "n4guetin",
+            "playerB": "puretapro",
+            "division": 8,
+            "caster": "siep_s",
+            "casterPlatform": "twitch",
+            "casterUrl": "https://www.twitch.tv/siep_s"
+        },
+        {
+            "hour": "22:30",
+            "playerA": "NHN_PhisysImperi",
+            "playerB": "manudq85",
+            "division": 3,
+            "caster": "siep_s",
+            "casterPlatform": "twitch",
+            "casterUrl": "https://www.twitch.tv/siep_s"
         }
     ]
 }

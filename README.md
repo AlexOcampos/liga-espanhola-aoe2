@@ -6,10 +6,6 @@
 
 - Featured games
 
-### 1.0.1
-
-- Fix long player names
-
 ### 1.0.0
 
 - Season 3 info
