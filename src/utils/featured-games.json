@@ -1,41 +1,41 @@
 {
-    "date": "Viernes 08/Oct",
+    "date": "Lunes 08/Oct",
     "matches": [
         {
-            "hour": "11:00",
-            "playerA": "TXUMA",
-            "playerB": "Hocicofregao_treyRINI",
+            "hour": "18:00",
+            "playerA": "carlos_XX",
+            "playerB": "SeMuR",
+            "division": 2,
+            "caster": "gentuzastv",
+            "casterPlatform": "twitch",
+            "casterUrl": "https://www.twitch.tv/gentuzastv"
+        },
+        {
+            "hour": "Tras finalizar el anterior",
+            "playerA": "Moneimon",
+            "playerB": "Poxo",
+            "division": 1,
+            "caster": "kostamudic",
+            "casterPlatform": "twitch",
+            "casterUrl": "https://www.twitch.tv/kostamudic"
+        },
+        {
+            "hour": "21:00",
+            "playerA": "Lord dekko",
+            "playerB": "EELARABE",
             "division": 7,
-            "caster": "siep_s",
+            "caster": "lorddekko",
             "casterPlatform": "twitch",
-            "casterUrl": "https://www.twitch.tv/siep_s"
+            "casterUrl": "https://www.twitch.tv/lorddekko"
         },
         {
-            "hour": "17:30",
-            "playerA": "marr0w",
-            "playerB": "Alfi_hakkinen",
-            "division": 7,
-            "caster": "siep_s",
-            "casterPlatform": "twitch",
-            "casterUrl": "https://www.twitch.tv/siep_s"
-        },
-        {
-            "hour": "20:00",
-            "playerA": "n4guetin",
-            "playerB": "puretapro",
-            "division": 8,
-            "caster": "siep_s",
-            "casterPlatform": "twitch",
-            "casterUrl": "https://www.twitch.tv/siep_s"
-        },
-        {
-            "hour": "22:30",
+            "hour": "21:00",
             "playerA": "NHN_PhisysImperi",
             "playerB": "manudq85",
-            "division": 3,
-            "caster": "siep_s",
+            "division": 2,
+            "caster": "kostamudic",
             "casterPlatform": "twitch",
-            "casterUrl": "https://www.twitch.tv/siep_s"
+            "casterUrl": "https://www.twitch.tv/kostamudic"
         }
     ]
 }
