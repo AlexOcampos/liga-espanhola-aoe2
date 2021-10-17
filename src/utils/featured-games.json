@@ -1,38 +1,38 @@
 {
-    "date": "Miércoles 13/Oct",
+    "date": "Domingo 17/Oct",
     "matches": [
         {
             "hour": "16:00",
-            "playerA": "twitch.tv/hilariano",
-            "playerB": "Rumba",
-            "division": 2,
+            "playerA": "Opposite Pool",
+            "playerB": "boarding87",
+            "division": 6,
             "caster": "siep_s",
             "casterPlatform": "twitch",
             "casterUrl": "https://www.twitch.tv/siep_s"
         },
         {
             "hour": "19:00",
-            "playerA": "ReyO",
-            "playerB": "IN.Piezod",
-            "division": 1,
+            "playerA": "NHN_PhisysImperi",
+            "playerB": "Nahan CT",
+            "division": 3,
             "caster": "siep_s",
             "casterPlatform": "twitch",
             "casterUrl": "https://www.twitch.tv/siep_s"
         },
         {
-            "hour": "22:00",
-            "playerA": "[UDGes] Verlok",
-            "playerB": "aitorcuesta",
-            "division": 4,
-            "caster": "craser09",
+            "hour": "21:00",
+            "playerA": "Nach",
+            "playerB": "Guilleluis96",
+            "division": 8,
+            "caster": "siep_s",
             "casterPlatform": "twitch",
-            "casterUrl": "https://www.twitch.tv/craser09"
+            "casterUrl": "https://www.twitch.tv/siep_s"
         },
         {
-            "hour": "22:00",
-            "playerA": "migueltrc",
-            "playerB": "[LA9NA] Charli_Ros",
-            "division": 6,
+            "hour": "22:30",
+            "playerA": "rudyairlines",
+            "playerB": "elantesconocidocomokekojones",
+            "division": 5,
             "caster": "siep_s",
             "casterPlatform": "twitch",
             "casterUrl": "https://www.twitch.tv/siep_s"
