@@ -1,41 +1,41 @@
 {
-    "date": "Domingo 17/Oct",
+    "date": "Lunes 18/Oct",
     "matches": [
         {
             "hour": "17:00",
-            "playerA": "Opposite Pool",
-            "playerB": "boarding87",
-            "division": 6,
-            "caster": "siep_s",
+            "playerA": "Moneimon",
+            "playerB": "iN.C3mbrich",
+            "division": 1,
+            "caster": "12Tirador",
             "casterPlatform": "twitch",
-            "casterUrl": "https://www.twitch.tv/siep_s"
+            "casterUrl": "https://www.twitch.tv/12Tirador"
         },
         {
-            "hour": "19:00",
-            "playerA": "NHN_PhisysImperi",
-            "playerB": "Nahan CT",
-            "division": 3,
-            "caster": "siep_s",
-            "casterPlatform": "twitch",
-            "casterUrl": "https://www.twitch.tv/siep_s"
-        },
-        {
-            "hour": "21:00",
-            "playerA": "Nach",
-            "playerB": "Guilleluis96",
+            "hour": "22:00",
+            "playerA": "Sauri17",
+            "playerB": "Optimusprime5.0",
             "division": 8,
-            "caster": "siep_s",
+            "caster": "mambru",
             "casterPlatform": "twitch",
-            "casterUrl": "https://www.twitch.tv/siep_s"
+            "casterUrl": "https://www.twitch.tv/mambru"
         },
         {
             "hour": "22:30",
             "playerA": "rudyairlines",
-            "playerB": "elantesconocidocomokekojones",
+            "playerB": "elantesmenteconocidocomokekojones",
             "division": 5,
-            "caster": "siep_s",
+            "caster": "craser09",
             "casterPlatform": "twitch",
-            "casterUrl": "https://www.twitch.tv/siep_s"
+            "casterUrl": "https://www.twitch.tv/craser09"
+        },
+        {
+            "hour": "VOD",
+            "playerA": "FerV",
+            "playerB": "Gauss",
+            "division": 1,
+            "caster": "tercios",
+            "casterPlatform": "youtube",
+            "casterUrl": "https://www.youtube.com/watch?v=qsEgMkr3rHU"
         }
     ]
 }

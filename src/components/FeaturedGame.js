@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import { divisiones } from "../utils/constants";
 import twitchLogo from "../assets/twitch.png";
@@ -79,6 +79,7 @@ const Wrapper = styled.div`
   .caster {
     display: flex;
     justify-content: flex-end;
+    cursor: pointer;
   }
   .caster img {
     margin: 0;
