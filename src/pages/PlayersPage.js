@@ -6,7 +6,11 @@ import { useFilterContext } from "../context/filter_context";
 import { Filters, Player } from "../components";
 
 const PlayersPage = () => {
-  const { filtered_players: players } = useFilterContext();
+  const {
+    filtered_players: players,
+    players_loading: loading,
+    players_error: error,
+  } = useFilterContext();
   return (
     <main>
       <Wrapper className="page section section-center">
@@ -28,9 +32,17 @@ const PlayersPage = () => {
           <Filters />
         </div>
         <div>
-          {players.map((player) => {
-            return <Player player={player} key={player.name} />;
-          })}
+          {loading ? <p>Cargando jugadores...</p> : ""}
+          {error
+            ? "Lo sentimos. Ha ocurrido un error cargando la lista de jugadores"
+            : ""}
+          {players.length >= 1 ? (
+            players.map((player) => {
+              return <Player player={player} key={player.name} />;
+            })
+          ) : (
+            <p>Cargando jugadores...</p>
+          )}
         </div>
       </Wrapper>
     </main>

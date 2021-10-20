@@ -1,7 +1,8 @@
 import React, { useEffect, useContext, useReducer } from "react";
 import reducer from "../reducers/filter_reducer";
 import { UPDATE_FILTERS, FILTER_PLAYERS, LOAD_PLAYERS } from "../actions";
-import players from "../utils/players-t3.json";
+//import players from "../utils/players-t3.json";
+import { usePlayersContext } from "./players_context";
 
 const initialState = {
   filtered_players: [],
@@ -14,10 +15,11 @@ const initialState = {
 const FilterContext = React.createContext();
 
 export const FilterProvider = ({ children }) => {
+  const { players } = usePlayersContext();
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
-    dispatch({ type: LOAD_PLAYERS, payload: players.players });
+    dispatch({ type: LOAD_PLAYERS, payload: players });
   }, [players]);
 
   useEffect(() => {
