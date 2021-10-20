@@ -4,10 +4,13 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { NavProvider } from "./context/nav_context";
+import { FilterProvider } from "./context/filter_context";
 
 ReactDOM.render(
   <NavProvider>
-    <App />
+    <FilterProvider>
+      <App />
+    </FilterProvider>
   </NavProvider>,
   document.getElementById("root")
 );

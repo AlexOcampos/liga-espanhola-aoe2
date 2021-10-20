@@ -13,10 +13,11 @@ const Filters = () => {
         {/* Search input */}
         <form onSubmit={(e) => e.preventDefault()}>
           <div className="form-control">
+            <h5>Filtros</h5>
             <input
               type="text"
               name="text"
-              placeholder="search"
+              placeholder="nombre jugador"
               className="search-input"
               value={text}
               onChange={updateFilters}
@@ -32,11 +33,13 @@ const Filters = () => {
 const Wrapper = styled.section`
   .form-control {
     margin-bottom: 1.25rem;
+    margin-top: 3rem;
     h5 {
       margin-bottom: 0.5rem;
     }
   }
   .search-input {
+    width: 100%;
     padding: 0.5rem;
     background: var(--clr-grey-10);
     border-radius: var(--radius);
@@ -102,17 +105,6 @@ const Wrapper = styled.section`
   }
   .all-btn .active {
     text-decoration: underline;
-  }
-  .price {
-    margin-bottom: 0.25rem;
-  }
-  .shipping {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    text-transform: capitalize;
-    column-gap: 0.5rem;
-    font-size: 1rem;
   }
   .clear-btn {
     background: var(--clr-red-dark);

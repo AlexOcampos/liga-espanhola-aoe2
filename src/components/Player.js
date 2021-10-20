@@ -15,7 +15,6 @@ const Player = ({ player }) => {
   const divisionName = divisionObj[0].text;
 
   useEffect(() => {
-    console.log(`Copied: ${copied}`);
     if (copied) {
       setTimeout(function () {
         setCopied(false);

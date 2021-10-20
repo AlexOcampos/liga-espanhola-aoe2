@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { players } from "../utils/players-t3.json";
+import { useFilterContext } from "../context/filter_context";
+//import { players } from "../utils/players-t3.json";
 
 import { Filters, Player } from "../components";
 
 const PlayersPage = () => {
+  const { filtered_products: players, grid_view } = useFilterContext();
   return (
     <main>
       <Wrapper className="page section section-center">
