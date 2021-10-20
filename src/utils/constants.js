@@ -65,4 +65,6 @@ export const divisiones = [
     link: "https://play.toornament.com/es/tournaments/5019556577757560832/stages/5019575287286939648/groups/5019575288058691625/#structure",
   },
 ];
-export const players_detailed_url = "http://127.0.0.1:5000/players-detailed";
+//export const players_detailed_url = "http://127.0.0.1:5000/players-detailed";
+export const players_detailed_url =
+  "https://liga-espanhola-aoe2.herokuapp.com/players-detailed";

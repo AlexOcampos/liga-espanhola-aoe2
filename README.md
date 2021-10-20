@@ -2,6 +2,11 @@
 
 ## Changelog
 
+### 1.2.0
+
+- Filter by name/discord on players list
+- Get players from backend
+
 ### 1.1.0
 
 - Featured games

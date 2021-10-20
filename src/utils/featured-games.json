@@ -1,41 +1,41 @@
 {
-    "date": "Lunes 18/Oct",
+    "date": "Miércoles 20/Oct",
     "matches": [
         {
-            "hour": "17:00",
-            "playerA": "Moneimon",
-            "playerB": "iN.C3mbrich",
+            "hour": "16:00",
+            "playerA": "NHN_PhisysImperi",
+            "playerB": "Nathan CT",
+            "division": 3,
+            "caster": "siEp_s",
+            "casterPlatform": "twitch",
+            "casterUrl": "https://www.twitch.tv/siEp_s"
+        },
+        {
+            "hour": "18:00",
+            "playerA": "Tatoh",
+            "playerB": "LaN",
             "division": 1,
-            "caster": "12Tirador",
+            "caster": "siEp_s",
             "casterPlatform": "twitch",
-            "casterUrl": "https://www.twitch.tv/12Tirador"
-        },
-        {
-            "hour": "22:00",
-            "playerA": "Sauri17",
-            "playerB": "Optimusprime5.0",
-            "division": 8,
-            "caster": "mambru",
-            "casterPlatform": "twitch",
-            "casterUrl": "https://www.twitch.tv/mambru"
-        },
-        {
-            "hour": "22:30",
-            "playerA": "rudyairlines",
-            "playerB": "elantesmenteconocidocomokekojones",
-            "division": 5,
-            "caster": "craser09",
-            "casterPlatform": "twitch",
-            "casterUrl": "https://www.twitch.tv/craser09"
+            "casterUrl": "https://www.twitch.tv/siEp_s"
         },
         {
             "hour": "VOD",
-            "playerA": "FerV",
-            "playerB": "Gauss",
-            "division": 1,
+            "playerA": "Chencho Corleone",
+            "playerB": "[R1] Comte Álex",
+            "division": 4,
             "caster": "tercios",
             "casterPlatform": "youtube",
-            "casterUrl": "https://www.youtube.com/watch?v=qsEgMkr3rHU"
+            "casterUrl": "https://www.youtube.com/watch?v=1uU_ywyZd80"
+        },
+        {
+            "hour": "VOD",
+            "playerA": "Rey Fer",
+            "playerB": "carrascorno",
+            "division": 5,
+            "caster": "tercios",
+            "casterPlatform": "youtube",
+            "casterUrl": "https://www.youtube.com/watch?v=yWFQTqPK1DA"
         }
     ]
 }
