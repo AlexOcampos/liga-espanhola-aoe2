@@ -6,7 +6,7 @@ import { useFilterContext } from "../context/filter_context";
 import { Filters, Player } from "../components";
 
 const PlayersPage = () => {
-  const { filtered_products: players, grid_view } = useFilterContext();
+  const { filtered_players: players } = useFilterContext();
   return (
     <main>
       <Wrapper className="page section section-center">

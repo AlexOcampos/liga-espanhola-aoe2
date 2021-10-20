@@ -1,16 +1,16 @@
 import {
   UPDATE_FILTERS,
   CLEAR_FILTERS,
-  FILTER_PRODUCTS,
-  LOAD_PRODUCTS,
+  FILTER_PLAYERS,
+  LOAD_PLAYERS,
 } from "../actions";
 
 const filter_reducer = (state, action) => {
-  if (action.type === LOAD_PRODUCTS) {
+  if (action.type === LOAD_PLAYERS) {
     return {
       ...state,
-      all_products: [...action.payload],
-      filtered_products: [...action.payload],
+      all_players: [...action.payload],
+      filtered_players: [...action.payload],
       filters: { ...state.filters },
     };
   }
@@ -22,19 +22,19 @@ const filter_reducer = (state, action) => {
     return { ...state, filters: { ...state.filters, [name]: value } };
   }
 
-  if (action.type === FILTER_PRODUCTS) {
-    const { all_products } = state;
+  if (action.type === FILTER_PLAYERS) {
+    const { all_players } = state;
     const { text } = state.filters;
-    let tempProducts = [...all_products];
+    let tempPlayers = [...all_players];
     if (text) {
-      tempProducts = tempProducts.filter((product) => {
+      tempPlayers = tempPlayers.filter((player) => {
         return (
-          product.name.toLowerCase().includes(text) ||
-          product.discord.toLowerCase().includes(text)
+          player.name.toLowerCase().includes(text.toLowerCase()) ||
+          player.discord.toLowerCase().includes(text.toLowerCase())
         );
       });
     }
-    return { ...state, filtered_products: tempProducts };
+    return { ...state, filtered_players: tempPlayers };
   }
 
   return state;
