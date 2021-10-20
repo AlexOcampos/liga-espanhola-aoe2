@@ -27,7 +27,7 @@ export const PlayersProvider = ({ children }) => {
     try {
       const response = await axios.get(url);
       const players = response.data.players;
-      console.log(players);
+
       dispatch({ type: GET_PLAYERS_SUCCESS, payload: players });
     } catch (error) {
       dispatch({ type: GET_PLAYERS_ERROR });

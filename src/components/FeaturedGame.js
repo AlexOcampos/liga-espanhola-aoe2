@@ -20,13 +20,13 @@ const FeaturedGame = ({ match }) => {
   const divisionName = divisionObj[0].text;
 
   return (
-    <Wrapper>
+    <Wrapper className="featured-game">
       <div className="match-info">
         <img src={`/divisions/${divisionImg}`} alt={divisionName} />
         <span>
           <b>{hour}</b>
         </span>
-        <span>
+        <span className="players">
           <b>{playerA.length > 20 ? `${playerA.slice(0, 20)}...` : playerA}</b>{" "}
           vs{" "}
           <b>{playerB.length > 20 ? `${playerB.slice(0, 20)}...` : playerB}</b>

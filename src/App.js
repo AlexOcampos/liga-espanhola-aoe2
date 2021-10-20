@@ -11,6 +11,7 @@ import {
   Temp3,
   Temp4,
   FeaturedGames,
+  FeaturedGamesPoster,
 } from "./pages/index";
 
 function App() {
@@ -37,6 +38,9 @@ function App() {
         </Route>
         <Route exact path="/featured-games">
           <FeaturedGames />
+        </Route>
+        <Route exact path="/admin/featured-games">
+          <FeaturedGamesPoster />
         </Route>
         <Route exact path="*">
           <Error />

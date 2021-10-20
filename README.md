@@ -2,6 +2,10 @@
 
 ## Changelog
 
+### 1.3.0
+
+- Admin page "featured games"
+
 ### 1.2.0
 
 - Filter by name/discord on players list

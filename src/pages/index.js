@@ -5,5 +5,15 @@ import Temp3 from "./Temp3Page";
 import Temp4 from "./Temp4Page";
 import Players from "./PlayersPage";
 import FeaturedGames from "./FeaturedGamesPage";
+import FeaturedGamesPoster from "./FeaturedGamesPagePoster";
 
-export { Home, Error, About, Players, Temp3, Temp4, FeaturedGames };
+export {
+  Home,
+  Error,
+  About,
+  Players,
+  Temp3,
+  Temp4,
+  FeaturedGames,
+  FeaturedGamesPoster,
+};
