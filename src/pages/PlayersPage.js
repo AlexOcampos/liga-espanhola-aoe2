@@ -1,9 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import Player from "../components/Player";
-import { players } from "../utils/players-t3.json";
+import { useFilterContext } from "../context/filter_context";
+//import { players } from "../utils/players-t3.json";
+
+import { Filters, Player } from "../components";
 
 const PlayersPage = () => {
+  const {
+    filtered_players: players,
+    players_loading: loading,
+    players_error: error,
+  } = useFilterContext();
   return (
     <main>
       <Wrapper className="page section section-center">
@@ -22,11 +29,20 @@ const PlayersPage = () => {
             El ELO medio se ha calculado con la siguiente fórmula: (ELO actual +
             ELO máximo) / 2
           </p>
+          <Filters />
         </div>
         <div>
-          {players.map((player) => {
-            return <Player player={player} key={player.name} />;
-          })}
+          {loading ? <p>Cargando jugadores...</p> : ""}
+          {error
+            ? "Lo sentimos. Ha ocurrido un error cargando la lista de jugadores"
+            : ""}
+          {players.length >= 1 ? (
+            players.map((player) => {
+              return <Player player={player} key={player.name} />;
+            })
+          ) : (
+            <p>Cargando jugadores...</p>
+          )}
         </div>
       </Wrapper>
     </main>

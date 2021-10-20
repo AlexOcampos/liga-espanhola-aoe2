@@ -4,10 +4,16 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { NavProvider } from "./context/nav_context";
+import { FilterProvider } from "./context/filter_context";
+import { PlayersProvider } from "./context/players_context";
 
 ReactDOM.render(
   <NavProvider>
-    <App />
+    <PlayersProvider>
+      <FilterProvider>
+        <App />
+      </FilterProvider>
+    </PlayersProvider>
   </NavProvider>,
   document.getElementById("root")
 );
