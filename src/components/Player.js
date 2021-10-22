@@ -9,10 +9,19 @@ import "animate.css";
 const Player = ({ player }) => {
   const [copied, setCopied] = useState(false);
 
-  const { division, seed, name, discord, avgELO, aoe2net } = player;
+  const {
+    division,
+    seed,
+    name,
+    discord,
+    avg_elo: avgELO,
+    aoe2net_url: aoe2net,
+  } = player;
   const divisionObj = divisiones.filter((div) => div.id === division);
   const divisionImg = divisionObj[0].image;
   const divisionName = divisionObj[0].text;
+
+  console.log(player);
 
   useEffect(() => {
     if (copied) {
