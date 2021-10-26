@@ -1,41 +1,41 @@
 {
-    "date": "Miércoles 20/Oct",
+    "date": "Martes 26/Oct",
     "matches": [
         {
-            "hour": "16:00",
-            "playerA": "NHN_PhisysImperi",
-            "playerB": "Nathan CT",
-            "division": 3,
+            "hour": "17:00",
+            "playerA": "Guilleluis96",
+            "playerB": "Su1zo",
+            "division": 8,
             "caster": "siEp_s",
             "casterPlatform": "twitch",
             "casterUrl": "https://www.twitch.tv/siEp_s"
         },
         {
-            "hour": "18:00",
-            "playerA": "Tatoh",
-            "playerB": "LaN",
+            "hour": "18:30",
+            "playerA": "[TdBar] Bronnn",
+            "playerB": "robertvr",
+            "division": 7,
+            "caster": "Hocicofregao_treyRINI",
+            "casterPlatform": "twitch",
+            "casterUrl": "https://www.twitch.tv/Hocicofregao_treyRINI"
+        },
+        {
+            "hour": "19:00",
+            "playerA": "NHN_iKKi",
+            "playerB": "NHN_Forever",
             "division": 1,
             "caster": "siEp_s",
             "casterPlatform": "twitch",
             "casterUrl": "https://www.twitch.tv/siEp_s"
         },
         {
-            "hour": "VOD",
-            "playerA": "Chencho Corleone",
-            "playerB": "[R1] Comte Álex",
+            "hour": "23:00",
+            "playerA": "DS_Lip",
+            "playerB": "craser09",
             "division": 4,
-            "caster": "tercios",
-            "casterPlatform": "youtube",
-            "casterUrl": "https://www.youtube.com/watch?v=1uU_ywyZd80"
-        },
-        {
-            "hour": "VOD",
-            "playerA": "Rey Fer",
-            "playerB": "carrascorno",
-            "division": 5,
-            "caster": "tercios",
-            "casterPlatform": "youtube",
-            "casterUrl": "https://www.youtube.com/watch?v=yWFQTqPK1DA"
+            "caster": "siEp_s",
+            "casterPlatform": "twitch",
+            "casterUrl": "https://www.twitch.tv/siEp_s"
         }
     ]
 }

@@ -165,7 +165,6 @@ p {
   background: var(--clr-grey-1);
   color: var(--clr-white);
   padding: 0.9rem;
-  letter-spacing: var(--spacing);
   display: inline-block;
   font-weight: 400;
   transition: var(--transition);
