@@ -143,7 +143,6 @@ const Wrapper = styled.section`
     }
 
     .players {
-      width: 600px;
     }
   }
 
