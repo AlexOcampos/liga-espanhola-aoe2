@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 const Notification = () => {
-  const message1 = "En curso la Jornada 4.";
-  const message2 = "Finaliza el Miércoles 27/Oct/2020 a las 23:59!";
+  const message1 = "En curso la Jornada 5.";
+  const message2 = "Finaliza el Miércoles 03/Nov/2021 a las 23:59!";
   return (
     <Wrapper>
       <span className="web">{message1}</span>
