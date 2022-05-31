@@ -10,6 +10,7 @@ import {
   Players,
   Temp3,
   Temp4,
+  Temp5,
   FeaturedGames,
   FeaturedGamesPoster,
 } from "./pages/index";
@@ -35,6 +36,9 @@ function App() {
         </Route>
         <Route exact path="/temporada-4">
           <Temp4 />
+        </Route>
+        <Route exact path="/temporada-5">
+          <Temp5 />
         </Route>
         <Route exact path="/featured-games">
           <FeaturedGames />
