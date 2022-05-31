@@ -132,7 +132,7 @@ const NavContainer = styled.nav`
         list-style: none;
       }
       a {
-        color: var(--clr-grey-3);
+        color: var(--clr-grey-2);
         font-size: 1.1rem;
         text-transform: uppercase;
         letter-spacing: var(--spacing);

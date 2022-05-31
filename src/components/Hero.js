@@ -43,7 +43,7 @@ const Wrapper = styled.section`
   display: flex;
 
   article {
-    background-color: #f1ede5;
+    background-color: var(--clr-grey-yellow);
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -72,7 +72,6 @@ const Wrapper = styled.section`
     margin: 0 auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    color: var(--clr-grey-5);
   }
   .title {
     text-align: left;

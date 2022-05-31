@@ -77,7 +77,7 @@ const Wrapper = styled.section`
   }
 
   .help-info {
-    background-color: #8bc34a;
+    background-color: #1c1f22;
     padding: 1rem;
   }
 
@@ -105,7 +105,7 @@ const Wrapper = styled.section`
 
   .poster {
     font-family: "Raleway";
-    background-color: #e1e6ea;
+    background-color: #1c1f22;
     display: flex;
     flex-direction: column;
     justify-content: center;

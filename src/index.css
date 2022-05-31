@@ -4,25 +4,29 @@
   --clr-primary-dark-2: #f22b29;
 
   /* primary/main color */
-  --clr-primary: #eb5757;
+  --clr-primary: #e63e3e;
   /* lighter shades of primary color */
-  --clr-primary-light-1: #f38375;
-  --clr-primary-light-2: #f7a399;
-  --clr-primary-light-3: #fbc3bc;
-  --clr-primary-light-4: #ffe3e0;
+  --clr-primary-light-1: #ffe3e0;
+  --clr-primary-light-2: #fbc3bc;
+  --clr-primary-light-3: #f17062;
+  --clr-primary-light-4: #f3442d;  
+
   /* darkest grey - used for headings */
-  --clr-grey-1: #404040;
-  --clr-grey-2: hsl(211, 39%, 23%);
-  --clr-grey-3: hsl(209, 34%, 30%);
-  --clr-grey-4: hsl(209, 28%, 39%);
+  --clr-grey-1: hsl(210, 36%, 96%);
+  --clr-grey-2: hsl(212, 33%, 89%);
+  --clr-grey-3: hsl(210, 31%, 80%);
+  --clr-grey-4: hsl(211, 27%, 70%);
   /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
-  --clr-white: #fff;
+  --clr-grey-5: hsl(209, 23%, 60%);
+  --clr-grey-6: hsl(210, 22%, 49%);
+  --clr-grey-7: hsl(209, 28%, 39%);
+  --clr-grey-8: hsl(209, 34%, 30%);
+  --clr-grey-9: hsl(211, 39%, 23%);
+  --clr-grey-10: #404040;
+
+  --clr-grey-yellow: #4a4438;
+
+  --clr-white: #1A1A1D;
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-green-dark: hsl(125, 67%, 44%);
@@ -95,7 +99,7 @@ h5 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-3);
+  color: var(--clr-grey-1);
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -162,7 +166,7 @@ p {
 
 .btn {
   text-transform: uppercase;
-  background: var(--clr-grey-1);
+  background: var(--clr-grey-2);
   color: var(--clr-white);
   padding: 0.9rem;
   display: inline-block;
@@ -175,7 +179,7 @@ p {
 }
 .btn:hover {
   color: var(--clr-white);
-  background: var(--clr-grey-4);
+  background: var(--clr-grey-6);
 }
 
 .btn a {
