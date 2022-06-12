@@ -39,7 +39,10 @@
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
   --fixed-width: 620px;
+  --header-height: 10rem;
 }
+
+
 /*
 =============== 
 Global Styles
@@ -47,6 +50,7 @@ Global Styles
 */
 
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
 
 *,
 ::after,
@@ -212,3 +216,4 @@ p {
 .page {
   min-height: calc(100vh - (20vh + 10rem));
 }
+

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { divisiones } from "../utils/constants";
+import { divisionesT3 } from "../utils/constants";
 import twitchLogo from "../assets/twitch.png";
 import youtubeLogo from "../assets/youtube.png";
 import "animate.css";
@@ -15,7 +15,7 @@ const FeaturedGame = ({ match }) => {
     casterPlatform,
     casterUrl,
   } = match;
-  const divisionObj = divisiones.filter((div) => div.id === division);
+  const divisionObj = divisionesT3.filter((div) => div.id === division);
   const divisionImg = divisionObj[0].image;
   const divisionName = divisionObj[0].text;
 

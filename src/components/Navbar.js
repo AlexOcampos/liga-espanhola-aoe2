@@ -77,7 +77,7 @@ const Nav = () => {
 };
 
 const NavContainer = styled.nav`
-  height: 10rem;
+  height: var(--header-height);
   display: flex;
   align-items: center;
   justify-content: center;

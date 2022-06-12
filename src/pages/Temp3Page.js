@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { divisiones } from "../utils/constants";
+import { divisionesT3 } from "../utils/constants";
 
 const Temp3Page = () => {
   const goToToornament = () => {
@@ -36,7 +36,7 @@ const Temp3Page = () => {
         </article>
         <article>
           <ul>
-            {divisiones.map((division) => {
+            {divisionesT3.map((division) => {
               const { id, text, image, link } = division;
               return (
                 <li

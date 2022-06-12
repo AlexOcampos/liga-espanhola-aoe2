@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { divisiones } from "../utils/constants";
+import { divisionesT3 } from "../utils/constants";
 import discordLogo from "../assets/discord.png";
 import aoe2netLogo from "../assets/aoe2net.png";
 import { FiExternalLink } from "react-icons/fi";
@@ -17,7 +17,7 @@ const Player = ({ player }) => {
     avg_elo: avgELO,
     aoe2net_url: aoe2net,
   } = player;
-  const divisionObj = divisiones.filter((div) => div.id === division);
+  const divisionObj = divisionesT3.filter((div) => div.id === division);
   const divisionImg = divisionObj[0].image;
   const divisionName = divisionObj[0].text;
 
