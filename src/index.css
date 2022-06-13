@@ -27,10 +27,11 @@
   --clr-grey-yellow: #4a4438;
 
   --clr-white: #1A1A1D;
-  --clr-red-dark: hsl(360, 67%, 44%);
-  --clr-red-light: hsl(360, 71%, 66%);
-  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-red-dark: #EB5757;
+  --clr-red-light: #F7A399;
+  --clr-green-dark: #6bb621;
   --clr-green-light: hsl(125, 71%, 66%);
+  --clr-yellow-dark: #C9CC1F;
   --clr-black: #222;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
@@ -71,6 +72,7 @@ ul {
 }
 a {
   text-decoration: none;
+  color: var(--clr-grey-1)
 }
 hr {
   border: none;

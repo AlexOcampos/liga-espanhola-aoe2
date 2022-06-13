@@ -14,6 +14,7 @@ import {
   Match,
   FeaturedGames,
   FeaturedGamesPoster,
+  Group,
 } from "./pages/index";
 
 function App() {
@@ -40,6 +41,9 @@ function App() {
         </Route>
         <Route exact path="/temporada-5">
           <Temp5 />
+        </Route>
+        <Route path="/season/:seasonId/group/:groupId">
+          <Group />
         </Route>
         <Route exact path="/match">
           <Match />

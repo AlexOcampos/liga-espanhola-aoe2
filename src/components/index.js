@@ -6,6 +6,7 @@ import Sidebar from "./Sidebar";
 import FeaturedGame from "./FeaturedGame";
 import Filters from "./Filters";
 import Player from "./Player";
+import ListView from "./ListView";
 
 export {
   Navbar,
@@ -16,4 +17,5 @@ export {
   Filters,
   Player,
   FeaturedGame,
+  ListView,
 };

@@ -5,13 +5,6 @@ import hero1 from "../assets/bannerE.png";
 import hero2 from "../assets/bannerF.png";
 
 const Hero = () => {
-  const goToToornament = () => {
-    return window.open(
-      `https://play.toornament.com/es/tournaments/5019556577757560832/`,
-      "_blank"
-    );
-  };
-
   return (
     <Wrapper className="section-center">
       <article className="x2">

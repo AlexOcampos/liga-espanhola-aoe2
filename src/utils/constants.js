@@ -165,6 +165,55 @@ export const divisionesT5 = [
   },
 ];
 
+export const seasons = [
+  {
+    id: 5,
+    name: "Temporada 5",
+    groups: [
+      {
+        id: 1,
+        text: "1. Campeones",
+        image: "campeones.png",
+      },
+      {
+        id: 2,
+        text: "2. Mandobles",
+        image: "mandobles.png",
+      },
+      {
+        id: 3,
+        text: "3. Espadas largas",
+        image: "espadas-largas.png",
+      },
+      {
+        id: 4,
+        text: "4. Hombres de armas",
+        image: "hombres-de-armas.png",
+      },
+      {
+        id: 5,
+        text: "5. Alabarderos",
+        image: "alabarderos.png",
+      },
+      {
+        id: 6,
+        text: "6. Milicias",
+        image: "milicias.png",
+      },
+      {
+        id: 7,
+        text: "7. Piqueros",
+        image: "piqueros.png",
+      },
+      {
+        id: 8,
+        text: "8. Lanceros",
+        image: "Lanceros.png",
+      },
+    ],
+  },
+];
+
 //export const players_detailed_url = "http://127.0.0.1:5000/players-detailed";
 export const players_detailed_url =
   "https://liga-espanhola-aoe2.herokuapp.com/players-detailed";

@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { divisionesT5 } from "../utils/constants";
+import { seasons } from "../utils/constants";
 
-const Temp3Page = () => {
+const Temp5Page = () => {
+  const groups = seasons.filter((item) => 5 === item.id)[0].groups;
   return (
     <main>
       <Wrapper className="page section section-center">
@@ -14,13 +15,15 @@ const Temp3Page = () => {
           </div>
 
           <ul>
-            {divisionesT5.map((division) => {
+            {groups.map((division) => {
               const { id, text, image } = division;
               return (
-                <li key={id} className="container">
-                  <img src={`./divisions/${image}`} alt={text} />
-                  <span className="title-division">{text}</span>
-                </li>
+                <Link key={id} to={`/season/5/group/${id}`}>
+                  <li className="container">
+                    <img src={`./divisions/${image}`} alt={text} />
+                    <span className="title-division">{text}</span>
+                  </li>
+                </Link>
               );
             })}
           </ul>
@@ -136,4 +139,4 @@ const Wrapper = styled.section`
     grid-template-columns: 1fr 1fr;
   }
 `;
-export default Temp3Page;
+export default Temp5Page;
