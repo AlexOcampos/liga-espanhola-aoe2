@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import styled from "styled-components";
 import hero1 from "../assets/bannerE.png";
 import { seasons } from "../utils/constants";
@@ -41,13 +41,17 @@ const Group = () => {
     );
   }
 
+  const seasonLink = season.id === 5 ? "/temporada-5" : `/season/${season.id}`;
   return (
     <main>
       <Wrapper className="page section section-center">
         <article>
           <p className="breadcrumb">
             Liga Española <span className="separator">&gt;</span>{" "}
-            <span>{season.name}</span> <span className="separator">&gt;</span>
+            <span>
+              <Link to={seasonLink}>{season.name}</Link>
+            </span>{" "}
+            <span className="separator">&gt;</span>
             <span>{group.text}</span>
           </p>
           <ListView />

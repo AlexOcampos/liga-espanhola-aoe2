@@ -7,6 +7,8 @@ import FeaturedGame from "./FeaturedGame";
 import Filters from "./Filters";
 import Player from "./Player";
 import ListView from "./ListView";
+import GroupRow from "./GroupRow";
+import MatchSummary from "./MatchSummary";
 
 export {
   Navbar,
@@ -18,4 +20,6 @@ export {
   Player,
   FeaturedGame,
   ListView,
+  GroupRow,
+  MatchSummary,
 };

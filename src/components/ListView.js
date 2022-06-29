@@ -1,6 +1,6 @@
-import React, { useRef } from "react";
+import React from "react";
 import styled from "styled-components";
-import { FaAngleDown, FaAngleUp } from "react-icons/fa";
+import { GroupRow } from "../components";
 
 const ListView = () => {
   const clasification = [
@@ -12,6 +12,7 @@ const ListView = () => {
         {
           gameId: 1,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -23,6 +24,7 @@ const ListView = () => {
         {
           gameId: 2,
           resultSummary: "3",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 3,
@@ -34,28 +36,31 @@ const ListView = () => {
         {
           gameId: 3,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
+          playerAResult: 0,
           playerAAW: "AW",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
         {
           gameId: 4,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 1,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 3,
           playerBAW: "",
         },
         {
           gameId: 5,
           resultSummary: "2",
+          date: null,
           result: "defeat",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -67,12 +72,25 @@ const ListView = () => {
         {
           gameId: 6,
           resultSummary: "-",
+          date: 1656534606,
           result: "not-played",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 0,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
+          playerBAW: "",
+        },
+        {
+          gameId: 7,
+          resultSummary: "-",
+          date: null,
+          result: "not-played",
+          playerA: "rudyairlines",
+          playerAResult: 0,
+          playerAAW: "",
+          playerB: "DK Cid Campeador",
+          playerBResult: 0,
           playerBAW: "",
         },
       ],
@@ -85,6 +103,7 @@ const ListView = () => {
         {
           gameId: 1,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -96,6 +115,7 @@ const ListView = () => {
         {
           gameId: 2,
           resultSummary: "3",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 3,
@@ -107,28 +127,31 @@ const ListView = () => {
         {
           gameId: 3,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
+          playerAResult: 0,
           playerAAW: "AW",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
         {
           gameId: 4,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 1,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 3,
           playerBAW: "",
         },
         {
           gameId: 5,
           resultSummary: "2",
+          date: null,
           result: "defeat",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -140,12 +163,13 @@ const ListView = () => {
         {
           gameId: 6,
           resultSummary: "-",
+          date: null,
           result: "not-played",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 0,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
       ],
@@ -158,6 +182,7 @@ const ListView = () => {
         {
           gameId: 1,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -169,6 +194,7 @@ const ListView = () => {
         {
           gameId: 2,
           resultSummary: "3",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 3,
@@ -180,28 +206,31 @@ const ListView = () => {
         {
           gameId: 3,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
+          playerAResult: 0,
           playerAAW: "AW",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
         {
           gameId: 4,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 1,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 3,
           playerBAW: "",
         },
         {
           gameId: 5,
           resultSummary: "2",
+          date: null,
           result: "defeat",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -212,13 +241,14 @@ const ListView = () => {
         },
         {
           gameId: 6,
-          resultSummary: "2",
+          resultSummary: "-",
+          date: null,
           result: "not-played",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 0,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
       ],
@@ -231,6 +261,7 @@ const ListView = () => {
         {
           gameId: 1,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -242,6 +273,7 @@ const ListView = () => {
         {
           gameId: 2,
           resultSummary: "3",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 3,
@@ -253,28 +285,31 @@ const ListView = () => {
         {
           gameId: 3,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
+          playerAResult: 0,
           playerAAW: "AW",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
         {
           gameId: 4,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 1,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 3,
           playerBAW: "",
         },
         {
           gameId: 5,
           resultSummary: "2",
+          date: null,
           result: "defeat",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -285,13 +320,14 @@ const ListView = () => {
         },
         {
           gameId: 6,
-          resultSummary: "2",
+          resultSummary: "-",
+          date: null,
           result: "not-played",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 0,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
       ],
@@ -304,6 +340,7 @@ const ListView = () => {
         {
           gameId: 1,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -315,6 +352,7 @@ const ListView = () => {
         {
           gameId: 2,
           resultSummary: "3",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 3,
@@ -326,28 +364,31 @@ const ListView = () => {
         {
           gameId: 3,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
+          playerAResult: 0,
           playerAAW: "AW",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
         {
           gameId: 4,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 1,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 3,
           playerBAW: "",
         },
         {
           gameId: 5,
           resultSummary: "2",
+          date: null,
           result: "defeat",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -358,13 +399,14 @@ const ListView = () => {
         },
         {
           gameId: 6,
-          resultSummary: "2",
+          resultSummary: "-",
+          date: null,
           result: "not-played",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 0,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
       ],
@@ -377,6 +419,7 @@ const ListView = () => {
         {
           gameId: 1,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -388,6 +431,7 @@ const ListView = () => {
         {
           gameId: 2,
           resultSummary: "3",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 3,
@@ -399,28 +443,31 @@ const ListView = () => {
         {
           gameId: 3,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
+          playerAResult: 0,
           playerAAW: "AW",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
         {
           gameId: 4,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 1,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 3,
           playerBAW: "",
         },
         {
           gameId: 5,
           resultSummary: "2",
+          date: null,
           result: "defeat",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -431,13 +478,14 @@ const ListView = () => {
         },
         {
           gameId: 6,
-          resultSummary: "2",
+          resultSummary: "-",
+          date: null,
           result: "not-played",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 0,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
       ],
@@ -450,6 +498,7 @@ const ListView = () => {
         {
           gameId: 1,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -461,6 +510,7 @@ const ListView = () => {
         {
           gameId: 2,
           resultSummary: "3",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 3,
@@ -472,28 +522,31 @@ const ListView = () => {
         {
           gameId: 3,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
+          playerAResult: 0,
           playerAAW: "AW",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
         {
           gameId: 4,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 1,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 3,
           playerBAW: "",
         },
         {
           gameId: 5,
           resultSummary: "2",
+          date: null,
           result: "defeat",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -504,13 +557,14 @@ const ListView = () => {
         },
         {
           gameId: 6,
-          resultSummary: "2",
+          resultSummary: "-",
+          date: null,
           result: "not-played",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 0,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
       ],
@@ -523,6 +577,7 @@ const ListView = () => {
         {
           gameId: 1,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -534,6 +589,7 @@ const ListView = () => {
         {
           gameId: 2,
           resultSummary: "3",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 3,
@@ -545,28 +601,31 @@ const ListView = () => {
         {
           gameId: 3,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
+          playerAResult: 0,
           playerAAW: "AW",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
         {
           gameId: 4,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 1,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 3,
           playerBAW: "",
         },
         {
           gameId: 5,
           resultSummary: "2",
+          date: null,
           result: "defeat",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -577,13 +636,14 @@ const ListView = () => {
         },
         {
           gameId: 6,
-          resultSummary: "2",
+          resultSummary: "-",
+          date: null,
           result: "not-played",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 0,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
       ],
@@ -596,6 +656,7 @@ const ListView = () => {
         {
           gameId: 1,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -607,6 +668,7 @@ const ListView = () => {
         {
           gameId: 2,
           resultSummary: "3",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 3,
@@ -618,28 +680,31 @@ const ListView = () => {
         {
           gameId: 3,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
+          playerAResult: 0,
           playerAAW: "AW",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
         {
           gameId: 4,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 1,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 3,
           playerBAW: "",
         },
         {
           gameId: 5,
           resultSummary: "2",
+          date: null,
           result: "defeat",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -650,13 +715,14 @@ const ListView = () => {
         },
         {
           gameId: 6,
-          resultSummary: "2",
+          resultSummary: "-",
+          date: null,
           result: "not-played",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 0,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
       ],
@@ -669,6 +735,7 @@ const ListView = () => {
         {
           gameId: 1,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -680,6 +747,7 @@ const ListView = () => {
         {
           gameId: 2,
           resultSummary: "3",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 3,
@@ -691,28 +759,31 @@ const ListView = () => {
         {
           gameId: 3,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
+          playerAResult: 0,
           playerAAW: "AW",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
         {
           gameId: 4,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 1,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 3,
           playerBAW: "",
         },
         {
           gameId: 5,
           resultSummary: "2",
+          date: null,
           result: "defeat",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -723,13 +794,14 @@ const ListView = () => {
         },
         {
           gameId: 6,
-          resultSummary: "2",
+          resultSummary: "-",
+          date: null,
           result: "not-played",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 0,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
       ],
@@ -742,6 +814,7 @@ const ListView = () => {
         {
           gameId: 1,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -753,6 +826,7 @@ const ListView = () => {
         {
           gameId: 2,
           resultSummary: "3",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 3,
@@ -764,28 +838,31 @@ const ListView = () => {
         {
           gameId: 3,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
+          playerAResult: 0,
           playerAAW: "AW",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
         {
           gameId: 4,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 1,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 3,
           playerBAW: "",
         },
         {
           gameId: 5,
           resultSummary: "2",
+          date: null,
           result: "defeat",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -796,13 +873,14 @@ const ListView = () => {
         },
         {
           gameId: 6,
-          resultSummary: "2",
+          resultSummary: "-",
+          date: null,
           result: "not-played",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 0,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
       ],
@@ -815,6 +893,7 @@ const ListView = () => {
         {
           gameId: 1,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -826,6 +905,7 @@ const ListView = () => {
         {
           gameId: 2,
           resultSummary: "3",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 3,
@@ -837,28 +917,31 @@ const ListView = () => {
         {
           gameId: 3,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
+          playerAResult: 0,
           playerAAW: "AW",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
         {
           gameId: 4,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 1,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 3,
           playerBAW: "",
         },
         {
           gameId: 5,
           resultSummary: "2",
+          date: null,
           result: "defeat",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -869,13 +952,14 @@ const ListView = () => {
         },
         {
           gameId: 6,
-          resultSummary: "2",
+          resultSummary: "-",
+          date: null,
           result: "not-played",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 0,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
       ],
@@ -888,6 +972,7 @@ const ListView = () => {
         {
           gameId: 1,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -899,6 +984,7 @@ const ListView = () => {
         {
           gameId: 2,
           resultSummary: "3",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 3,
@@ -910,28 +996,31 @@ const ListView = () => {
         {
           gameId: 3,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
+          playerAResult: 0,
           playerAAW: "AW",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
         {
           gameId: 4,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 1,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 3,
           playerBAW: "",
         },
         {
           gameId: 5,
           resultSummary: "2",
+          date: null,
           result: "defeat",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -942,13 +1031,14 @@ const ListView = () => {
         },
         {
           gameId: 6,
-          resultSummary: "2",
+          resultSummary: "-",
+          date: null,
           result: "not-played",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 0,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
       ],
@@ -961,6 +1051,7 @@ const ListView = () => {
         {
           gameId: 1,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -972,6 +1063,7 @@ const ListView = () => {
         {
           gameId: 2,
           resultSummary: "3",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 3,
@@ -983,28 +1075,31 @@ const ListView = () => {
         {
           gameId: 3,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
+          playerAResult: 0,
           playerAAW: "AW",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
         {
           gameId: 4,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 1,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 3,
           playerBAW: "",
         },
         {
           gameId: 5,
           resultSummary: "2",
+          date: null,
           result: "defeat",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -1015,13 +1110,14 @@ const ListView = () => {
         },
         {
           gameId: 6,
-          resultSummary: "2",
+          resultSummary: "-",
+          date: null,
           result: "not-played",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 0,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
       ],
@@ -1034,6 +1130,7 @@ const ListView = () => {
         {
           gameId: 1,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -1045,6 +1142,7 @@ const ListView = () => {
         {
           gameId: 2,
           resultSummary: "3",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 3,
@@ -1056,28 +1154,31 @@ const ListView = () => {
         {
           gameId: 3,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
+          playerAResult: 0,
           playerAAW: "AW",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
         {
           gameId: 4,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 1,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 3,
           playerBAW: "",
         },
         {
           gameId: 5,
           resultSummary: "2",
+          date: null,
           result: "defeat",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -1088,13 +1189,14 @@ const ListView = () => {
         },
         {
           gameId: 6,
-          resultSummary: "2",
+          resultSummary: "-",
+          date: null,
           result: "not-played",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 0,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
       ],
@@ -1107,6 +1209,7 @@ const ListView = () => {
         {
           gameId: 1,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -1118,6 +1221,7 @@ const ListView = () => {
         {
           gameId: 2,
           resultSummary: "3",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
           playerAResult: 3,
@@ -1129,28 +1233,31 @@ const ListView = () => {
         {
           gameId: 3,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
+          playerAResult: 0,
           playerAAW: "AW",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
         {
           gameId: 4,
           resultSummary: "2",
+          date: null,
           result: "win",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 1,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 3,
           playerBAW: "",
         },
         {
           gameId: 5,
           resultSummary: "2",
+          date: null,
           result: "defeat",
           playerA: "rudyairlines",
           playerAResult: 2,
@@ -1161,13 +1268,14 @@ const ListView = () => {
         },
         {
           gameId: 6,
-          resultSummary: "2",
+          resultSummary: "-",
+          date: null,
           result: "not-played",
           playerA: "rudyairlines",
-          playerAResult: 2,
-          playerAAW: "AW",
+          playerAResult: 0,
+          playerAAW: "",
           playerB: "DK Cid Campeador",
-          playerBResult: 2,
+          playerBResult: 0,
           playerBAW: "",
         },
       ],
@@ -1187,57 +1295,11 @@ const ListView = () => {
       <hr />
       {clasification.map((player) => {
         return (
-          <>
-            <div className="row">
-              {player.position === 1 ? (
-                <div className="position pos-1"></div>
-              ) : (
-                ""
-              )}
-              {player.position === 2 || player.position === 3 ? (
-                <div className="position pos-promotion"></div>
-              ) : (
-                ""
-              )}
-              {player.position === lastPosition - 1 ||
-              player.position === lastPosition - 2 ? (
-                <div className="position pos-playoff-descent"></div>
-              ) : (
-                ""
-              )}
-              {player.position === lastPosition ? (
-                <div className="position pos-last"></div>
-              ) : (
-                ""
-              )}
-              <div className="x1">{player.position}</div>
-              <div className="x4">{player.player}</div>
-              <div className="x2">{player.points}</div>
-              <div className="x3 matches-history">
-                {player.history.map((match) => {
-                  return (
-                    <div className={`match ${match.result}`}>
-                      {match.resultSummary}
-                    </div>
-                  );
-                })}
-              </div>
-              <FaAngleDown />
-              {
-                //<FaAngleUp />
-              }
-            </div>
-            <div className="matches-history-detail detail-hidden">
-              {player.history.map((match) => {
-                return (
-                  <div className={`match ${match.result}`}>
-                    {match.resultSummary}
-                  </div>
-                );
-              })}
-            </div>
-            <hr />
-          </>
+          <GroupRow
+            key={`GroupRow-${player}-${player.position}`}
+            {...player}
+            lastPosition={lastPosition}
+          />
         );
       })}
     </Wrapper>
@@ -1282,58 +1344,6 @@ const Wrapper = styled.div`
 
   .header {
     font-weight: bold;
-  }
-
-  .position {
-    width: 5px;
-    height: 90%;
-    border-radius: 8px;
-  }
-
-  .pos-1 {
-    background-color: var(--clr-green-dark);
-  }
-
-  .pos-promotion {
-    background-color: var(--clr-yellow-dark);
-  }
-
-  .pos-playoff-descent {
-    background-color: var(--clr-red-light);
-  }
-
-  .pos-last {
-    background-color: var(--clr-red-dark);
-  }
-
-  .matches-history {
-    display: flex;
-  }
-
-  .detail-hidden {
-    display: none;
-  }
-
-  .match {
-    width: 2rem;
-    height: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    margin: 0.2rem;
-  }
-
-  .win {
-    background-color: var(--clr-green-dark);
-  }
-
-  .defeat {
-    background-color: var(--clr-red-dark);
-  }
-
-  .not-played {
-    background-color: var(--clr-grey-4);
   }
 `;
 
