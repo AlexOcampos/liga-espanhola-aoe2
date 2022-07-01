@@ -9,6 +9,10 @@ import Player from "./Player";
 import ListView from "./ListView";
 import GroupRow from "./GroupRow";
 import MatchSummary from "./MatchSummary";
+import MatchGame from "./MatchGame";
+import Flag from "./Flag";
+import MapDraft from "./MapDraft";
+import CivDraft from "./CivDraft";
 
 export {
   Navbar,
@@ -22,4 +26,8 @@ export {
   ListView,
   GroupRow,
   MatchSummary,
+  MatchGame,
+  Flag,
+  MapDraft,
+  CivDraft,
 };

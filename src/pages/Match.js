@@ -1,83 +1,179 @@
 import React from "react";
+import { Link, useParams } from "react-router-dom";
 import styled from "styled-components";
-import hero1 from "../assets/bannerE.png";
-import logo from "../assets/lea_logo.png";
 
-const Temp3Page = () => {
+import { MatchGame, Flag, MapDraft, CivDraft } from "../components";
+
+import { seasons } from "../utils/constants";
+import hero1 from "../assets/bannerE.png";
+
+const MatchPage = () => {
+  const { matchId } = useParams();
+
+  const matchDetail = {
+    matchId: 1,
+    seasonId: 5,
+    groupId: 1,
+    resultSummary: "2",
+    date: 1656534606,
+    playerA: "rudyairlines",
+    playerAResult: 2,
+    playerAAW: "",
+    playerB: "DK Cid Campeador",
+    playerBResult: 1,
+    playerBAW: "",
+    draft: {
+      mapBans: {
+        playerA: [25],
+        playerB: [23],
+      },
+      mapPicks: {
+        playerA: [17],
+        playerB: [50],
+      },
+      civBans: {
+        playerA: [25],
+        playerB: [22],
+      },
+      civPicks: {
+        playerA: [12, 2, 3, 43, 5],
+        playerB: [6, 7, 8, 9, 10],
+      },
+      civSnipeds: {
+        playerA: [2],
+        playerB: [10],
+      },
+    },
+    games: [
+      {
+        gameId: 123456789,
+        recUrl: "",
+        winner: "playerA",
+        winnerAW: false,
+        mapId: 12,
+        playerAcivId: 1,
+        playerBcivId: 2,
+      },
+      {
+        gameId: 123456789,
+        recUrl: "",
+        winner: "playerA",
+        winnerAW: false,
+        mapId: 16,
+        playerAcivId: 3,
+        playerBcivId: 4,
+      },
+      {
+        gameId: 123456789,
+        recUrl: "",
+        winner: "playerB",
+        winnerAW: false,
+        mapId: 9,
+        playerAcivId: 14,
+        playerBcivId: 15,
+      },
+    ],
+  };
+
+  const seasonFilter = seasons.filter(
+    (item) => parseInt(matchDetail.seasonId) === item.id
+  );
+  const season =
+    seasonFilter && seasonFilter.length > 0
+      ? seasonFilter[0]
+      : { id: -1, name: "Temporada no existe" };
+  const groupFilter = season.groups.filter(
+    (item) => parseInt(matchDetail.groupId) === item.id
+  );
+  const group =
+    groupFilter && groupFilter.length > 0
+      ? groupFilter[0]
+      : { id: -1, name: "Grupo no existe" };
+
+  if (season.id === -1) {
+    return (
+      <main>
+        <Wrapper className="page section section-center">
+          <div className="error">La temporada no existe</div>
+        </Wrapper>
+      </main>
+    );
+  }
+
+  if (group.id === -1) {
+    return (
+      <main>
+        <Wrapper className="page section section-center">
+          <div className="error">La división no existe</div>
+        </Wrapper>
+      </main>
+    );
+  }
+
+  const seasonLink = season.id === 5 ? "/temporada-5" : `/season/${season.id}`;
+  const groupLink = `/season/${season.id}/group/${group.id}`;
+
   return (
     <main>
       <Wrapper className="page section section-center">
         <article>
-          <div className="opponents">
-            DK_RUDYAIRLINES <b>VS</b> DK_CID CAMPEADOR
-          </div>
+          <p className="breadcrumb">
+            Liga Española <span className="separator">&gt;</span>{" "}
+            <span>
+              <Link to={seasonLink}>{season.name}</Link>
+            </span>{" "}
+            <span className="separator">&gt;</span>
+            <span>
+              <Link to={groupLink}>{group.text}</Link>
+            </span>
+            <span className="separator">&gt;</span>
+            <span>
+              {matchDetail.playerA} vs {matchDetail.playerB}
+            </span>
+          </p>
+
           <div className="row-2">
             <div className="flag">
-              <div className="flag-generator">
-                <div className="halo"></div>
-                <img className="lea-logo" src={logo} alt="Liga Española" />
-                <img
-                  className="clan-logo"
-                  src={`/clans/dark-knight.png`}
-                  alt="dark-knight"
-                />
-                <div className="flag-player-name">DK_RUDYAIRLINES</div>
-                <img
-                  className="profile-image-icon"
-                  src="https://annapulley.com/wp-content/uploads/2010/02/meerkat-200x300.jpg"
-                  alt="profileImage"
-                />
-                <svg
-                  className="flag-background"
-                  width="128"
-                  height="211"
-                  viewBox="0 0 128 211"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4 208V192.738V4H122V192.738V208L103 193.756L83.5 208L63.5 193.756L43.5 208L23.5 193.756L4 208Z"
-                    fill="#D9D9D9"
-                    stroke="black"
-                    strokeWidth="3"
-                  />
-                  <rect width="128" height="7" fill="#FF0000" />
-                </svg>
-              </div>
+              <Flag
+                playerName={matchDetail.playerA}
+                playerImg="https://annapulley.com/wp-content/uploads/2010/02/meerkat-200x300.jpg"
+                playerClan="/clans/dark-knight.png"
+                haloColor="#6bb621"
+              />
+              <MapDraft
+                mapBans={matchDetail.draft.mapBans.playerA}
+                mapPicks={matchDetail.draft.mapPicks.playerA}
+              />
+              <CivDraft
+                civBans={matchDetail.draft.civBans.playerA}
+                civPicks={matchDetail.draft.civPicks.playerA}
+                civSnipeds={matchDetail.draft.civSnipeds.playerA}
+              />
+            </div>
+
+            <div className="matches">
+              <h1 className="result">
+                {matchDetail.playerAResult} : {matchDetail.playerBResult}
+              </h1>
+              {matchDetail.games.map((game, index) => {
+                return <MatchGame key={index} {...game} />;
+              })}
             </div>
 
             <div className="flag">
-              <div className="flag-generator">
-                <div className="halo"></div>
-                <img className="lea-logo" src={logo} alt="Liga Española" />
-                <img
-                  className="clan-logo"
-                  src={`/clans/dark-knight.png`}
-                  alt="dark-knight"
-                />
-                <div className="flag-player-name">DK_RUDYAIRLINES</div>
-                <img
-                  className="profile-image-icon"
-                  src="https://annapulley.com/wp-content/uploads/2010/02/meerkat-200x300.jpg"
-                  alt="profileImage"
-                />
-                <svg
-                  className="flag-background"
-                  width="128"
-                  height="211"
-                  viewBox="0 0 128 211"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4 208V192.738V4H122V192.738V208L103 193.756L83.5 208L63.5 193.756L43.5 208L23.5 193.756L4 208Z"
-                    fill="#D9D9D9"
-                    stroke="black"
-                    strokeWidth="3"
-                  />
-                  <rect width="128" height="7" fill="#FF0000" />
-                </svg>
-              </div>
+              <Flag
+                playerName={matchDetail.playerB}
+                playerImg="https://www.aceros-de-hispania.com/imagen/espadas-cid/el-cid-campeador.gif"
+              />
+              <MapDraft
+                mapBans={matchDetail.draft.mapBans.playerB}
+                mapPicks={matchDetail.draft.mapPicks.playerB}
+              />
+              <CivDraft
+                civBans={matchDetail.draft.civBans.playerB}
+                civPicks={matchDetail.draft.civPicks.playerB}
+                civSnipeds={matchDetail.draft.civSnipeds.playerB}
+              />
             </div>
           </div>
         </article>
@@ -91,6 +187,18 @@ const Temp3Page = () => {
 const Wrapper = styled.section`
   padding: 1rem 0;
 
+  .breadcrumb {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 5rem;
+
+    .separator {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+
   article {
     display: flex;
   }
@@ -102,63 +210,6 @@ const Wrapper = styled.section`
   }
 
   .flag {
-    position: relative;
-    margin: 64px;
-    transform: scale(1.5);
-  }
-
-  .flag-generator {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .lea-logo {
-    position: absolute;
-    width: 60px;
-    top: -20px;
-    z-index: 20;
-  }
-
-  .flag-player-name {
-    position: absolute;
-    max-width: 110px;
-    word-break: break-all;
-    margin-top: 70px;
-    font-size: 0.7rem;
-    color: #000000;
-    font-family: "Cabin Sketch", cursive;
-  }
-
-  .profile-image-icon {
-    top: 24px;
-    right: 15px;
-    width: 100px;
-    height: 100px;
-    clip-path: circle(50% at 50% 50%);
-    object-fit: cover;
-    position: absolute;
-  }
-
-  .clan-logo {
-    position: absolute;
-    width: 60px;
-    bottom: 16px;
-    opacity: 0.4;
-  }
-
-  .halo {
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    z-index: -10;
-    background: rgb(63, 94, 251);
-    background: radial-gradient(
-      circle,
-      rgb(0 78 255 / 50%) 0%,
-      rgba(63, 94, 251, 0) 49%
-    );
   }
 
   .background {
@@ -186,5 +237,11 @@ const Wrapper = styled.section`
       font-size: 2.5rem;
     }
   }
+
+  .result {
+    display: flex;
+    justify-content: center;
+    font-size: 4.5rem;
+  }
 `;
-export default Temp3Page;
+export default MatchPage;

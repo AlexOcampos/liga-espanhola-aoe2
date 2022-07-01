@@ -45,7 +45,7 @@ function App() {
         <Route path="/season/:seasonId/group/:groupId">
           <Group />
         </Route>
-        <Route exact path="/match">
+        <Route exact path="/match/:matchId">
           <Match />
         </Route>
         <Route exact path="/featured-games">
