@@ -45,6 +45,9 @@ class MapDataHelper extends Component {
   };
 
   static getMapImageById = (mapId) => {
+    if (mapId === 0) {
+      return "/maps/cm_generic.png";
+    }
     const maps = MapData.maps;
 
     var result = maps.filter((map) => {

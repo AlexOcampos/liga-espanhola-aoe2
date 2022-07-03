@@ -20,6 +20,10 @@ class CivDataHelper extends Component {
   };
 
   static getCivImage = (civId) => {
+    if (civId === 0) {
+      return "/civs/generic_civ.png";
+    }
+
     const civs = CivData.civilizations;
     var result = civs.filter((civ) => {
       if (civ.id === civId) {
