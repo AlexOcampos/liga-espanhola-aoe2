@@ -10,71 +10,138 @@ import hero1 from "../assets/bannerE.png";
 const MatchPage = () => {
   const { matchId } = useParams();
 
-  const matchDetail = {
-    matchId: 1,
-    seasonId: 5,
-    groupId: 1,
-    resultSummary: "2",
-    date: 1656534606,
-    playerA: "rudyairlines",
-    playerAResult: 2,
-    playerAAW: "",
-    playerB: "DK Cid Campeador",
-    playerBResult: 1,
-    playerBAW: "",
-    draft: {
-      mapBans: {
-        playerA: [25],
-        playerB: [23],
+  const matches = [
+    {
+      matchId: 1,
+      seasonId: 5,
+      groupId: 1,
+      status: "FINISHED",
+      resultSummary: "2",
+      date: 1656534606,
+      playerA: "rudyairlines",
+      playerAResult: 2,
+      playerAAW: "",
+      playerB: "DK Cid Campeador",
+      playerBResult: 1,
+      playerBAW: "",
+      draft: {
+        template: {
+          mapBans: 1,
+          mapPicks: 1,
+          mapSnipes: 0,
+          civBans: 1,
+          civPicks: 5,
+          civSnipes: 1,
+        },
+        mapBans: {
+          playerA: [25],
+          playerB: [23],
+        },
+        mapPicks: {
+          playerA: [17],
+          playerB: [50],
+        },
+        civBans: {
+          playerA: [25],
+          playerB: [22],
+        },
+        civPicks: {
+          playerA: [12, 2, 3, 43, 5],
+          playerB: [6, 7, 8, 9, 10],
+        },
+        civSnipeds: {
+          playerA: [2],
+          playerB: [10],
+        },
       },
-      mapPicks: {
-        playerA: [17],
-        playerB: [50],
-      },
-      civBans: {
-        playerA: [25],
-        playerB: [22],
-      },
-      civPicks: {
-        playerA: [12, 2, 3, 43, 5],
-        playerB: [6, 7, 8, 9, 10],
-      },
-      civSnipeds: {
-        playerA: [2],
-        playerB: [10],
-      },
+      games: [
+        {
+          gameId: 123456789,
+          recUrl: "",
+          winner: "playerA",
+          winnerAW: false,
+          mapId: 12,
+          playerAcivId: 1,
+          playerBcivId: 2,
+        },
+        {
+          gameId: 123456789,
+          recUrl: "",
+          winner: "playerA",
+          winnerAW: false,
+          mapId: 16,
+          playerAcivId: 3,
+          playerBcivId: 4,
+        },
+        {
+          gameId: 123456789,
+          recUrl: "",
+          winner: "playerB",
+          winnerAW: false,
+          mapId: 9,
+          playerAcivId: 14,
+          playerBcivId: 15,
+        },
+      ],
     },
-    games: [
-      {
-        gameId: 123456789,
-        recUrl: "",
-        winner: "playerA",
-        winnerAW: false,
-        mapId: 12,
-        playerAcivId: 1,
-        playerBcivId: 2,
+    {
+      matchId: 2,
+      seasonId: 5,
+      groupId: 1,
+      status: "NOT_STARTED",
+      resultSummary: "2",
+      date: 1656534606,
+      playerA: "rudyairlines",
+      playerAResult: 0,
+      playerAAW: "",
+      playerB: "DK Verlok",
+      playerBResult: 0,
+      playerBAW: "",
+      draft: {
+        template: {
+          mapBans: 1,
+          mapPicks: 1,
+          mapSnipes: 0,
+          civBans: 1,
+          civPicks: 5,
+          civSnipes: 1,
+        },
+        mapBans: {
+          playerA: [],
+          playerB: [],
+        },
+        mapPicks: {
+          playerA: [],
+          playerB: [],
+        },
+        civBans: {
+          playerA: [25],
+          playerB: [22],
+        },
+        civPicks: {
+          playerA: [12, 2, 3, 43, 5],
+          playerB: [6, 7, 8, 9, 10],
+        },
+        civSnipeds: {
+          playerA: [2],
+          playerB: [10],
+        },
       },
-      {
-        gameId: 123456789,
-        recUrl: "",
-        winner: "playerA",
-        winnerAW: false,
-        mapId: 16,
-        playerAcivId: 3,
-        playerBcivId: 4,
-      },
-      {
-        gameId: 123456789,
-        recUrl: "",
-        winner: "playerB",
-        winnerAW: false,
-        mapId: 9,
-        playerAcivId: 14,
-        playerBcivId: 15,
-      },
-    ],
-  };
+      games: [],
+    },
+  ];
 
+  const findMatch = matches.filter(
+    (match) => match.matchId === parseInt(matchId)
+  );
+  const matchDetail =
+    findMatch && findMatch.length > 0 ? findMatch[0] : matches[0];
+
+  const d = new Date(matchDetail.date * 1000);
+  const dformat = d
+    .toISOString()
+    .replace(/T/, " ")
+    .replace(/:\d\d\..+/, "");
   const seasonFilter = seasons.filter(
     (item) => parseInt(matchDetail.seasonId) === item.id
   );
@@ -139,12 +206,15 @@ const MatchPage = () => {
                 playerImg="https://annapulley.com/wp-content/uploads/2010/02/meerkat-200x300.jpg"
                 playerClan="/clans/dark-knight.png"
                 haloColor="#6bb621"
+                flagColor="#6be675"
               />
               <MapDraft
+                template={matchDetail.draft.template}
                 mapBans={matchDetail.draft.mapBans.playerA}
                 mapPicks={matchDetail.draft.mapPicks.playerA}
               />
               <CivDraft
+                template={matchDetail.draft.template}
                 civBans={matchDetail.draft.civBans.playerA}
                 civPicks={matchDetail.draft.civPicks.playerA}
                 civSnipeds={matchDetail.draft.civSnipeds.playerA}
@@ -153,7 +223,15 @@ const MatchPage = () => {
 
             <div className="matches">
               <h1 className="result">
-                {matchDetail.playerAResult} : {matchDetail.playerBResult}
+                {matchDetail.status === "NOT_STARTED" ? (
+                  <div>
+                    <p>No ha comenzado</p>
+
+                    <p>{matchDetail.date ? dformat : ""}</p>
+                  </div>
+                ) : (
+                  `${matchDetail.playerAResult} : ${matchDetail.playerBResult}`
+                )}
               </h1>
               {matchDetail.games.map((game, index) => {
                 return <MatchGame key={index} {...game} />;
@@ -164,12 +242,15 @@ const MatchPage = () => {
               <Flag
                 playerName={matchDetail.playerB}
                 playerImg="https://www.aceros-de-hispania.com/imagen/espadas-cid/el-cid-campeador.gif"
+                flagColor="#6d6d6d"
               />
               <MapDraft
+                template={matchDetail.draft.template}
                 mapBans={matchDetail.draft.mapBans.playerB}
                 mapPicks={matchDetail.draft.mapPicks.playerB}
               />
               <CivDraft
+                template={matchDetail.draft.template}
                 civBans={matchDetail.draft.civBans.playerB}
                 civPicks={matchDetail.draft.civPicks.playerB}
                 civSnipeds={matchDetail.draft.civSnipeds.playerB}
@@ -242,6 +323,11 @@ const Wrapper = styled.section`
     display: flex;
     justify-content: center;
     font-size: 4.5rem;
+
+    div {
+      font-size: 1.5rem;
+      text-transform: none;
+    }
   }
 `;
 export default MatchPage;

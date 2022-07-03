@@ -22,10 +22,11 @@ function convertHex(hexCode, opacity = 1) {
   return "rgba(" + r + "," + g + "," + b + "," + opacity + ")";
 }
 
-const Flag = ({ playerName, playerImg, playerClan, haloColor }) => {
+const Flag = ({ playerName, playerImg, playerClan, haloColor, flagColor }) => {
   const haloPlayerColor = haloColor ? haloColor : "#EB5757";
   const rgbHalo1 = convertHex(haloPlayerColor, 0.5);
   const rgbHalo2 = convertHex(haloPlayerColor, 0);
+  const flagColorHex = flagColor ? flagColor : "#dae2ec";
 
   return (
     <Wrapper>
@@ -58,7 +59,7 @@ const Flag = ({ playerName, playerImg, playerClan, haloColor }) => {
         >
           <path
             d="M4 208V192.738V4H122V192.738V208L103 193.756L83.5 208L63.5 193.756L43.5 208L23.5 193.756L4 208Z"
-            fill="#D9D9D9"
+            fill={flagColorHex}
             stroke="black"
             strokeWidth="3"
           />
