@@ -25,7 +25,8 @@ const MapDraft = ({ template, mapBans, mapPicks }) => {
     <Wrapper>
       <div className="maplist">
         {mapBansPlaceholder.map((mapId, index) => {
-          var mapName = MapDataHelper.getMapNameById(mapId);
+          var mapName =
+            mapId !== 0 ? MapDataHelper.getMapNameById(mapId) : "pending";
           var mapImage = MapDataHelper.getMapImageById(mapId);
 
           return (
