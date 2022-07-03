@@ -43,10 +43,11 @@ const MapDraft = ({ template, mapBans, mapPicks }) => {
         })}
 
         {mapPicksPlaceholder.map((mapId, index) => {
-          var mapName = MapDataHelper.getMapNameById(mapId);
+          var mapName =
+            mapId !== 0 ? MapDataHelper.getMapNameById(mapId) : "pending";
           var mapImage = MapDataHelper.getMapImageById(mapId);
           return (
-            <div className="map-placeholder">
+            <div key={`mappick-${mapId}-${index}`} className="map-placeholder">
               <img
                 className="mapImg"
                 key={`mappick-${mapId}-${index}`}
@@ -64,6 +65,7 @@ const MapDraft = ({ template, mapBans, mapPicks }) => {
 
 const Wrapper = styled.section`
   display: flex;
+  justify-content: center;
   .mapImg {
     width: 7rem;
   }

@@ -101,7 +101,6 @@ const Wrapper = styled.section`
 
   .profile-image-icon {
     top: 24px;
-    right: 15px;
     width: 100px;
     height: 100px;
     clip-path: circle(50% at 50% 50%);

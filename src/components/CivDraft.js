@@ -55,6 +55,7 @@ const CivDraft = ({ template, civBans, civPicks, civSnipeds }) => {
 
 const Wrapper = styled.section`
   display: flex;
+  justify-content: center;
   .civIcon {
     position: relative;
     display: flex;

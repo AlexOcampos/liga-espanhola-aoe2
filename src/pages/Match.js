@@ -115,16 +115,16 @@ const MatchPage = () => {
           playerB: [],
         },
         civBans: {
-          playerA: [25],
-          playerB: [22],
+          playerA: [],
+          playerB: [],
         },
         civPicks: {
-          playerA: [12, 2, 3, 43, 5],
-          playerB: [6, 7, 8, 9, 10],
+          playerA: [],
+          playerB: [],
         },
         civSnipeds: {
-          playerA: [2],
-          playerB: [10],
+          playerA: [],
+          playerB: [],
         },
       },
       games: [],
