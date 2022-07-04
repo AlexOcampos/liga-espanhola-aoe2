@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import styled from "styled-components";
-import { FaEdit } from "react-icons/fa";
-//import DateTimePicker from "react-datetime-picker";
 import DateTimePicker from "react-datetime-picker/dist/entry.nostyle";
 
-import { MatchGame, Flag, MapDraft, CivDraft } from "../components";
+import {
+  MatchGame,
+  Flag,
+  MapDraft,
+  CivDraft,
+  ButtonModern,
+} from "../components";
 
 import { seasons } from "../utils/constants";
 import hero1 from "../assets/bannerE.png";
@@ -141,10 +145,6 @@ const MatchPage = () => {
     findMatch && findMatch.length > 0 ? findMatch[0] : matches[0];
 
   const d = new Date(matchDetail.date * 1000);
-  const dformat = d
-    .toISOString()
-    .replace(/T/, " ")
-    .replace(/:\d\d\..+/, "");
   const seasonFilter = seasons.filter(
     (item) => parseInt(matchDetail.seasonId) === item.id
   );
@@ -214,17 +214,23 @@ const MatchPage = () => {
                 haloColor="#6bb621"
                 flagColor="#6be675"
               />
-              <MapDraft
-                template={matchDetail.draft.template}
-                mapBans={matchDetail.draft.mapBans.playerA}
-                mapPicks={matchDetail.draft.mapPicks.playerA}
-              />
-              <CivDraft
-                template={matchDetail.draft.template}
-                civBans={matchDetail.draft.civBans.playerA}
-                civPicks={matchDetail.draft.civPicks.playerA}
-                civSnipeds={matchDetail.draft.civSnipeds.playerA}
-              />
+              {matchDetail.status === "NOT_STARTED" ? (
+                ""
+              ) : (
+                <div>
+                  <MapDraft
+                    template={matchDetail.draft.template}
+                    mapBans={matchDetail.draft.mapBans.playerA}
+                    mapPicks={matchDetail.draft.mapPicks.playerA}
+                  />
+                  <CivDraft
+                    template={matchDetail.draft.template}
+                    civBans={matchDetail.draft.civBans.playerA}
+                    civPicks={matchDetail.draft.civPicks.playerA}
+                    civSnipeds={matchDetail.draft.civSnipeds.playerA}
+                  />
+                </div>
+              )}
             </div>
 
             <div className="matches">
@@ -232,10 +238,6 @@ const MatchPage = () => {
                 {matchDetail.status === "NOT_STARTED" ? (
                   <div>
                     <p>No ha comenzado</p>
-                    {/* <p>
-                      {matchDetail.date ? dformat : ""}
-                      <FaEdit className="edit-icon" />
-                    </p> */}
                     <div>
                       <DateTimePicker
                         className="date-picker"
@@ -244,6 +246,11 @@ const MatchPage = () => {
                         disabled={false}
                       />
                     </div>
+                    <ButtonModern
+                      text={"Empezar"}
+                      link={"#"}
+                      marginTop={"4rem"}
+                    />
                   </div>
                 ) : (
                   `${matchDetail.playerAResult} : ${matchDetail.playerBResult}`
@@ -260,17 +267,23 @@ const MatchPage = () => {
                 playerImg="https://www.aceros-de-hispania.com/imagen/espadas-cid/el-cid-campeador.gif"
                 flagColor="#6d6d6d"
               />
-              <MapDraft
-                template={matchDetail.draft.template}
-                mapBans={matchDetail.draft.mapBans.playerB}
-                mapPicks={matchDetail.draft.mapPicks.playerB}
-              />
-              <CivDraft
-                template={matchDetail.draft.template}
-                civBans={matchDetail.draft.civBans.playerB}
-                civPicks={matchDetail.draft.civPicks.playerB}
-                civSnipeds={matchDetail.draft.civSnipeds.playerB}
-              />
+              {matchDetail.status === "NOT_STARTED" ? (
+                ""
+              ) : (
+                <div>
+                  <MapDraft
+                    template={matchDetail.draft.template}
+                    mapBans={matchDetail.draft.mapBans.playerB}
+                    mapPicks={matchDetail.draft.mapPicks.playerB}
+                  />
+                  <CivDraft
+                    template={matchDetail.draft.template}
+                    civBans={matchDetail.draft.civBans.playerB}
+                    civPicks={matchDetail.draft.civPicks.playerB}
+                    civSnipeds={matchDetail.draft.civSnipeds.playerB}
+                  />
+                </div>
+              )}
             </div>
           </div>
         </article>
@@ -349,8 +362,20 @@ const Wrapper = styled.section`
     margin-left: 0.5rem;
     cursor: pointer;
   }
+
+  .matches {
+    display: flex;
+    justify-content: center;
+    h1 div p {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  /* Date Picker */
   .date-picker {
     color: var(--clr-grey-1);
+    cursor: pointer;
   }
 
   .react-datetime-picker {
@@ -380,6 +405,7 @@ const Wrapper = styled.section`
     min-width: calc(4px + (4px * 3) + 0.54em * 6 + 0.217em * 2);
     flex-grow: 1;
     padding: 0 2px;
+    cursor: pointer;
   }
   .react-datetime-picker__inputGroup__divider {
     padding: 1px 0;
@@ -396,6 +422,7 @@ const Wrapper = styled.section`
     box-sizing: content-box;
     -moz-appearance: textfield;
     color: var(--clr-grey-1);
+    cursor: pointer;
   }
   .react-datetime-picker__inputGroup__input::-webkit-outer-spin-button,
   .react-datetime-picker__inputGroup__input::-webkit-inner-spin-button {

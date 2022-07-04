@@ -13,6 +13,8 @@ import MatchGame from "./MatchGame";
 import Flag from "./Flag";
 import MapDraft from "./MapDraft";
 import CivDraft from "./CivDraft";
+import ButtonModern from "./ButtonModern";
+import MatchDraft from "./MatchDraft";
 
 export {
   Navbar,
@@ -30,4 +32,6 @@ export {
   Flag,
   MapDraft,
   CivDraft,
+  ButtonModern,
+  MatchDraft,
 };
