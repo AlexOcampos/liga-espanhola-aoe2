@@ -9,6 +9,7 @@ import {
   MapDraft,
   CivDraft,
   ButtonModern,
+  MatchDraft,
 } from "../components";
 
 import { seasons } from "../utils/constants";
@@ -40,6 +41,28 @@ const MatchPage = () => {
           civPicks: 5,
           civSnipes: 1,
         },
+        mapTurns: [
+          {
+            turn: 1,
+            player: "playerA",
+            action: "BAN",
+          },
+          {
+            turn: 2,
+            player: "playerB",
+            action: "BAN",
+          },
+          {
+            turn: 3,
+            player: "playerB",
+            action: "PICK",
+          },
+          {
+            turn: 4,
+            player: "playerA",
+            action: "PICK",
+          },
+        ],
         mapBans: {
           playerA: [25],
           playerB: [23],
@@ -113,6 +136,167 @@ const MatchPage = () => {
           civPicks: 5,
           civSnipes: 1,
         },
+        mapTurns: [
+          {
+            turn: 1,
+            player: "playerA",
+            action: "BAN",
+          },
+          {
+            turn: 2,
+            player: "playerB",
+            action: "BAN",
+          },
+          {
+            turn: 3,
+            player: "playerB",
+            action: "PICK",
+          },
+          {
+            turn: 4,
+            player: "playerA",
+            action: "PICK",
+          },
+        ],
+        mapBans: {
+          playerA: [],
+          playerB: [],
+        },
+        mapPicks: {
+          playerA: [],
+          playerB: [],
+        },
+        civBans: {
+          playerA: [],
+          playerB: [],
+        },
+        civPicks: {
+          playerA: [],
+          playerB: [],
+        },
+        civSnipeds: {
+          playerA: [],
+          playerB: [],
+        },
+      },
+      games: [],
+    },
+    {
+      matchId: 3,
+      seasonId: 5,
+      groupId: 1,
+      status: "DRAFT_START",
+      resultSummary: "2",
+      date: 1656534606,
+      playerA: "rudyairlines",
+      playerAResult: 0,
+      playerAAW: "",
+      playerB: "GL.Tatoh",
+      playerBResult: 0,
+      playerBAW: "",
+      draft: {
+        template: {
+          mapBans: 1,
+          mapPicks: 1,
+          mapSnipes: 0,
+          civBans: 1,
+          civPicks: 5,
+          civSnipes: 1,
+        },
+        mapTurns: [
+          {
+            turn: 1,
+            player: "playerA",
+            action: "BAN",
+          },
+          {
+            turn: 2,
+            player: "playerB",
+            action: "BAN",
+          },
+          {
+            turn: 3,
+            player: "playerB",
+            action: "PICK",
+          },
+          {
+            turn: 4,
+            player: "playerA",
+            action: "PICK",
+          },
+        ],
+        civTurns: [
+          {
+            turn: 1,
+            player: "playerA",
+            action: "BAN",
+          },
+          {
+            turn: 2,
+            player: "playerB",
+            action: "BAN",
+          },
+          {
+            turn: 3,
+            player: "playerB",
+            action: "PICK",
+          },
+          {
+            turn: 4,
+            player: "playerA",
+            action: "PICK",
+          },
+          {
+            turn: 5,
+            player: "playerA",
+            action: "PICK",
+          },
+          {
+            turn: 6,
+            player: "playerB",
+            action: "PICK",
+          },
+          {
+            turn: 7,
+            player: "playerB",
+            action: "PICK",
+          },
+          {
+            turn: 8,
+            player: "playerA",
+            action: "PICK",
+          },
+          {
+            turn: 9,
+            player: "playerA",
+            action: "PICK",
+          },
+          {
+            turn: 10,
+            player: "playerB",
+            action: "PICK",
+          },
+          {
+            turn: 11,
+            player: "playerB",
+            action: "PICK",
+          },
+          {
+            turn: 12,
+            player: "playerA",
+            action: "PICK",
+          },
+          {
+            turn: 13,
+            player: "playerA",
+            action: "SNIPE",
+          },
+          {
+            turn: 13,
+            player: "playerB",
+            action: "SNIPE",
+          },
+        ],
         mapBans: {
           playerA: [],
           playerB: [],
@@ -185,6 +369,18 @@ const MatchPage = () => {
 
   const seasonLink = season.id === 5 ? "/temporada-5" : `/season/${season.id}`;
   const groupLink = `/season/${season.id}/group/${group.id}`;
+
+  if (matchDetail.status === "DRAFT_START") {
+    return (
+      <MatchDraft
+        match={matchDetail}
+        seasonLink={seasonLink}
+        season={season}
+        groupLink={groupLink}
+        group={group}
+      />
+    );
+  }
 
   return (
     <main>
@@ -366,6 +562,7 @@ const Wrapper = styled.section`
   .matches {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     h1 div p {
       display: flex;
       justify-content: center;

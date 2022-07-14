@@ -35,6 +35,8 @@
   --clr-dark-violet: #9400d3;
   --clr-copper: #D5B496;
   --clr-black: #222;
+  --clr-playerA: #FF0000;
+  --clr-playerB: #EBFF00;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;
