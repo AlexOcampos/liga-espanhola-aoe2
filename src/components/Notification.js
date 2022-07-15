@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavContext } from "../context/nav_context";
 const Notification = () => {
+  const { isNotificationOpen } = useNavContext();
   const message1 = "En curso la Jornada 7.";
   const message2 = "Finaliza el Miércoles 17/Nov/2021 a las 23:59!";
   return (
-    <Wrapper>
+    <Wrapper style={{ display: `${isNotificationOpen ? "flex" : "none"}` }}>
       <span className="web">{message1}</span>
       <span className="web">
         <b>{message2}</b>

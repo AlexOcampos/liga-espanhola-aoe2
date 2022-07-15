@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-const ButtonModern = ({ text, link, marginTop }) => {
+const ButtonModern = ({ text, link, marginTop, fontSize }) => {
+  const fontTextSize = fontSize ? fontSize : "0.8em";
   return (
     <Wrapper style={{ marginTop: marginTop }}>
-      <a href={link}>
+      <a href={link} style={{ fontSize: fontTextSize }}>
         <span>{text}</span>
         <i></i>
       </a>

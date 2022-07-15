@@ -1,4 +1,5 @@
 import Home from "./HomePage";
+import Home2 from "./HomePage2";
 import Error from "./ErrorPage";
 import About from "./AboutPage";
 import Temp3 from "./Temp3Page";
@@ -12,6 +13,7 @@ import FeaturedGamesPoster from "./FeaturedGamesPagePoster";
 
 export {
   Home,
+  Home2,
   Error,
   About,
   Players,

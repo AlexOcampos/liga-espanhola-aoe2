@@ -22,11 +22,11 @@ const Nav = () => {
   }
 
   const [activePage, setActivePage] = useState(activePageUrl);
-  const { openSidebar } = useNavContext();
+  const { openSidebar, isNavbarOpen } = useNavContext();
 
   return (
-    <NavContainer>
-      <div className="App">
+    <NavContainer style={{ display: `${isNavbarOpen ? "flex" : "none"}` }}>
+      <div>
         <header>
           <div className="nav-center">
             <div className="nav-header">
@@ -78,9 +78,16 @@ const Nav = () => {
 
 const NavContainer = styled.nav`
   height: var(--header-height);
-  display: flex;
   align-items: center;
   justify-content: center;
+
+  .navbar {
+    display: none;
+  }
+
+  .show-navbar {
+    display: flex;
+  }
 
   .nav-center {
     width: 90vw;
@@ -92,7 +99,7 @@ const NavContainer = styled.nav`
     align-items: center;
     justify-content: space-between;
     img {
-      width: 175px;
+      width: 80px;
       margin-left: -15px;
     }
   }

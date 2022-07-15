@@ -10,6 +10,11 @@ export const links = [
     url: "/temporada-3",
   },
   {
+    id: 4,
+    text: "temporada 4",
+    url: "/temporada-4",
+  },
+  {
     id: 5,
     text: "temporada 5",
     url: "/temporada-5",
