@@ -15,6 +15,7 @@ import MapDraft from "./MapDraft";
 import CivDraft from "./CivDraft";
 import ButtonModern from "./ButtonModern";
 import MatchDraft from "./MatchDraft";
+import InputFieldText from "./InputFieldText";
 
 export {
   Navbar,
@@ -32,6 +33,7 @@ export {
   Flag,
   MapDraft,
   CivDraft,
-  ButtonModern,
   MatchDraft,
+  ButtonModern,
+  InputFieldText,
 };

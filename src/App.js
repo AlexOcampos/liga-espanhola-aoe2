@@ -11,6 +11,7 @@ import {
   Temp3,
   Temp4,
   Temp5,
+  RegisterT5,
   Match,
   FeaturedGames,
   FeaturedGamesPoster,
@@ -38,6 +39,9 @@ function App() {
         </Route>
         <Route exact path="/temporada-4">
           <Temp4 />
+        </Route>
+        <Route exact path="/inscripcion-t5">
+          <RegisterT5 />
         </Route>
         <Route exact path="/temporada-5">
           <Temp5 />
