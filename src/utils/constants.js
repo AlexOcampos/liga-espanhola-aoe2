@@ -1,10 +1,5 @@
 export const links = [
   {
-    id: 1,
-    text: "home",
-    url: "/",
-  },
-  {
     id: 2,
     text: "temporada 3",
     url: "/temporada-3",
@@ -214,6 +209,111 @@ export const seasons = [
         id: 8,
         text: "8. Lanceros",
         image: "Lanceros.png",
+      },
+    ],
+  },
+];
+
+export const t5registerform = [
+  {
+    stepId: 1,
+    stepName: "Perfil",
+    fields: [
+      {
+        fieldId: "username",
+        title: "* username",
+        mandatory: true,
+        type: "text",
+      },
+      {
+        fieldId: "discord",
+        title: "* discord user",
+        mandatory: true,
+        type: "text",
+      },
+      {
+        fieldId: "email",
+        title: "* email",
+        mandatory: true,
+        type: "text",
+      },
+    ],
+  },
+  {
+    stepId: 2,
+    stepName: "Origen",
+    fields: [
+      {
+        fieldId: "country-selector",
+        title: "",
+        mandatory: true,
+        type: "single-select",
+        options: [
+          "Soy residente en España",
+          "Soy español desplazado",
+          "Soy un invitado",
+        ],
+      },
+    ],
+  },
+  {
+    stepId: 3,
+    stepName: "Perfil AoE2",
+    fields: [
+      {
+        fieldId: "aoe2net-principal",
+        title: "* url AoE2net cuenta principal",
+        mandatory: true,
+        type: "text",
+      },
+      {
+        fieldId: "aoe2net-explanation",
+        title:
+          "¿Tienes alguna cuenta secundaria? Por favor ponla en conocimiento de la organización.",
+        mandatory: false,
+        type: "explanation",
+      },
+      {
+        fieldId: "aoe2net-secondary-1",
+        title: "url AoE2net cuenta secundaria 1",
+        mandatory: false,
+        type: "text",
+      },
+      {
+        fieldId: "aoe2net-secondary-2",
+        title: "url AoE2net cuenta secundaria 2",
+        mandatory: false,
+        type: "text",
+      },
+    ],
+  },
+  {
+    stepId: 4,
+    stepName: "Social",
+    fields: [
+      {
+        fieldId: "social-explanation",
+        title: "¿Tienes alguna red social? Compártela con nosotros!",
+        mandatory: false,
+        type: "explanation",
+      },
+      {
+        fieldId: "twitch",
+        title: "canal twitch",
+        mandatory: false,
+        type: "text",
+      },
+      {
+        fieldId: "youtube",
+        title: "canal youtube",
+        mandatory: false,
+        type: "text",
+      },
+      {
+        fieldId: "twitter",
+        title: "twitter",
+        mandatory: false,
+        type: "text",
       },
     ],
   },

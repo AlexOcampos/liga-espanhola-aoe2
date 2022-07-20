@@ -1,11 +1,32 @@
 import React from "react";
 import styled from "styled-components";
 
-const ButtonModern = ({ text, link, marginTop, fontSize }) => {
+const ButtonModern = ({
+  text,
+  link,
+  marginTop,
+  marginBottom,
+  marginLeft,
+  marginRight,
+  fontSize,
+  onClick,
+}) => {
   const fontTextSize = fontSize ? fontSize : "0.8em";
+  const marginTopValue = marginTop ? marginTop : 0;
+  const marginBottomValue = marginBottom ? marginBottom : 0;
+  const marginLeftValue = marginLeft ? marginLeft : 0;
+  const marginRightValue = marginRight ? marginRight : 0;
+  const linkValue = link ? link : "#";
   return (
-    <Wrapper style={{ marginTop: marginTop }}>
-      <a href={link} style={{ fontSize: fontTextSize }}>
+    <Wrapper
+      style={{
+        marginTop: marginTopValue,
+        marginBottom: marginBottomValue,
+        marginLeft: marginLeftValue,
+        marginRight: marginRightValue,
+      }}
+    >
+      <a href={linkValue} style={{ fontSize: fontTextSize }} onClick={onClick}>
         <span>{text}</span>
         <i></i>
       </a>

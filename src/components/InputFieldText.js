@@ -1,11 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
-const InputFieldText = ({ title }) => {
+const InputFieldText = ({ id, name, title, onChange }) => {
   return (
     <Wrapper>
       <div className="inputBox">
-        <input type="text" required="required" />
+        <input
+          id={id}
+          name={name}
+          type="text"
+          required="required"
+          onChange={onChange}
+        />
         <span>{title}</span>
       </div>
     </Wrapper>
@@ -13,6 +19,10 @@ const InputFieldText = ({ title }) => {
 };
 
 const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
   margin: 1rem;
   padding: 0;
   box-sizing: border-box;

@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { useNavContext } from "../context/nav_context";
 const Notification = () => {
   const { isNotificationOpen } = useNavContext();
-  const message1 = "En curso la Jornada 7.";
-  const message2 = "Finaliza el Miércoles 17/Nov/2021 a las 23:59!";
+  const message1 = "La temporada comienza el 31/Ago/2022.";
+  const message2 = "Apúntate antes del 29/Ago/2022!";
   return (
     <Wrapper style={{ display: `${isNotificationOpen ? "flex" : "none"}` }}>
       <span className="web">{message1}</span>
