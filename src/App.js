@@ -6,6 +6,7 @@ import { Navbar, Footer, Notification, Sidebar } from "./components";
 import {
   Error,
   Home,
+  HallOfFamePage,
   About,
   Players,
   Temp3,
@@ -30,6 +31,9 @@ function App() {
         </Route>
         <Route exact path="/about">
           <About />
+        </Route>
+        <Route exact path="/hall-of-fame">
+          <HallOfFamePage />
         </Route>
         <Route exact path="/temporada-3">
           <Temp3 />

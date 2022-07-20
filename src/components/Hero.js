@@ -7,25 +7,27 @@ import hero2 from "../assets/bannerF.png";
 const Hero = () => {
   return (
     <Wrapper className="section-center">
-      <article className="x2">
-        <h3>Temporada 5</h3>
-        <p>¿Cuándo juego? ¿Cuál es mi división? Aquí tienes toda la info.</p>
-        <Link to="temporada-5">
-          <button className="btn">Info T5</button>
-        </Link>
-        <img src={hero1} alt="background 1" />
-      </article>
       <article className="x1">
-        <h3>Partidas destacadas</h3>
+        <h3>Temporada 3</h3>
         <p>
-          Cada día los streamers con los que tenemos acuerdo seleccionan las
-          mejores partidas y las retransmiten en sus canales. ¿Quieres verlas y
-          apoyar a tus jugadores favoritos?
+          ¿La recuerdas? Que atrás ha quedado! ¿Quiénes fueron los campeones?
+          Rememora viejos tiempos aquí.
         </p>
-        <Link to="/featured-games">
-          <button className="btn">Destacados</button>
+        <Link to="temporada-3">
+          <button className="btn">Info T3</button>
         </Link>
-        <img src={hero2} alt="background 2" />
+        <img src={hero2} alt="background 1" />
+      </article>
+      <article className="x2">
+        <h3>Temporada 4</h3>
+        <p>
+          Aún parece que fue ayer, pero ya han pasado un par de meses desde la
+          última edición...
+        </p>
+        <Link to="temporada-4">
+          <button className="btn">Info T4</button>
+        </Link>
+        <img src={hero1} alt="background 2" />
       </article>
     </Wrapper>
   );
