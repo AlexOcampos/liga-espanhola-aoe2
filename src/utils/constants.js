@@ -1,18 +1,13 @@
 export const links = [
   {
+    id: 1,
+    text: "¡Inscribete en la T5!",
+    url: "/inscripcion-t5",
+  },
+  {
     id: 2,
-    text: "temporada 3",
-    url: "/temporada-3",
-  },
-  {
-    id: 4,
-    text: "temporada 4",
-    url: "/temporada-4",
-  },
-  {
-    id: 5,
-    text: "temporada 5",
-    url: "/temporada-5",
+    text: "Hall of fame",
+    url: "/hall-of-fame",
   },
   {
     id: 3,

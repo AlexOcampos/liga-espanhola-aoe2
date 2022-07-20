@@ -63,3 +63,16 @@ If there aren't any featured matches, you must leave matches array empty:
     "matches": []
 }
 ```
+
+Boton abrir inscripciones
+
+```
+<div className="links">
+          <ButtonModern
+            text="Inscribete"
+            link="/inscripcion-t5"
+            marginTop="0"
+            fontSize="1.8em"
+          />
+        </div>
+```

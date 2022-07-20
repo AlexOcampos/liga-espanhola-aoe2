@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useNavContext } from "../context/nav_context";
 const Notification = () => {
   const { isNotificationOpen } = useNavContext();
-  const message1 = "La temporada comienza el 31/Ago/2022.";
+  const message1 = "La temporada T5 comienza el 31/Ago/2022.";
   const message2 = "Apúntate antes del 29/Ago/2022!";
   return (
     <Wrapper style={{ display: `${isNotificationOpen ? "flex" : "none"}` }}>
