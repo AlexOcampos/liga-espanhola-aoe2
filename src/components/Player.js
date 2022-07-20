@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { divisionesT3 } from "../utils/constants";
-import discordLogo from "../assets/discord.png";
-import aoe2netLogo from "../assets/aoe2net.png";
 import { FiExternalLink } from "react-icons/fi";
 import "animate.css";
 
@@ -59,7 +57,10 @@ const Player = ({ player }) => {
             setCopied(true);
           }}
         >
-          <img src={discordLogo} alt={discord} />
+          <img
+            src="https://alexocampos.github.io/liga-espanhola-aoe2-static/assets/discord.png"
+            alt={discord}
+          />
           <span>{discord}</span>
         </div>
         <span
@@ -73,7 +74,10 @@ const Player = ({ player }) => {
         </span>
 
         <div className="aoe2net" onClick={() => window.open(aoe2net)}>
-          <img src={aoe2netLogo} alt="AoE2Net" />
+          <img
+            src="https://alexocampos.github.io/liga-espanhola-aoe2-static/assets/aoe2net.png"
+            alt="AoE2Net"
+          />
           <span>AoE2Net</span>
           <FiExternalLink />
         </div>

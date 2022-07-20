@@ -15,13 +15,25 @@ const MatchGame = (game) => {
   return (
     <Wrapper>
       <div className={winnerA ? "winner" : ""}>
-        <img src={`/civs/${civA}.png`} alt={civA} title={civA} />
+        <img
+          src={`https://alexocampos.github.io/liga-espanhola-aoe2-static/civs/${civA.toLowerCase()}.png`}
+          alt={civA}
+          title={civA}
+        />
       </div>
       <div>
-        <img src={mapImage} alt={mapName} title={mapName} />
+        <img
+          src={`https://alexocampos.github.io/liga-espanhola-aoe2-static${mapImage}`}
+          alt={mapName}
+          title={mapName}
+        />
       </div>
       <div className={winnerB ? "winner" : ""}>
-        <img src={`/civs/${civB}.png`} alt={civB} title={civB} />
+        <img
+          src={`https://alexocampos.github.io/liga-espanhola-aoe2-static/civs/${civB.toLowerCase()}.png`}
+          alt={civB}
+          title={civB}
+        />
       </div>
     </Wrapper>
   );

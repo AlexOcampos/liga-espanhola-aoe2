@@ -61,7 +61,7 @@ export const divisionesT3 = [
   {
     id: 8,
     text: "8. Lanceros",
-    image: "Lanceros.png",
+    image: "lanceros.png",
     link: "https://play.toornament.com/es/tournaments/5019556577757560832/stages/5019575287286939648/groups/5019575288058691625/#structure",
   },
 ];
@@ -156,7 +156,7 @@ export const divisionesT5 = [
   {
     id: 8,
     text: "8. Lanceros",
-    image: "Lanceros.png",
+    image: "lanceros.png",
   },
 ];
 
@@ -203,7 +203,7 @@ export const seasons = [
       {
         id: 8,
         text: "8. Lanceros",
-        image: "Lanceros.png",
+        image: "lanceros.png",
       },
     ],
   },

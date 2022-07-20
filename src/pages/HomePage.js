@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useNavContext } from "../context/nav_context";
-import { ButtonModern } from "../components";
-
-import logo from "../assets/lea_logo.png";
-import twitter from "../assets/twitter.jpg";
-import discord from "../assets/discord_color.jpg";
+//import { ButtonModern } from "../components";
 
 const HomePage = () => {
   const registerDate = "2022-08-1 00:20:00";
@@ -76,17 +72,21 @@ const HomePage = () => {
   return (
     <Wrapper>
       <div className="container">
-        <img className="logo" src={logo} alt="Liga Española" />
+        <img
+          className="logo"
+          src="https://alexocampos.github.io/liga-espanhola-aoe2-static/assets/lea_logo.png"
+          alt="Liga Española"
+        />
         <h2>{timerComponents.length ? timerComponents : <span>14!</span>}</h2>
 
         <div className="social">
           <img
-            src={twitter}
+            src="https://alexocampos.github.io/liga-espanhola-aoe2-static/assets/twitter.jpg"
             alt="twitter"
             onClick={() => window.open(twitterUrl, "_blank")}
           />
           <img
-            src={discord}
+            src="https://alexocampos.github.io/liga-espanhola-aoe2-static/assets/discord_color.jpg"
             alt="discord"
             onClick={() => window.open(discordUrl, "_blank")}
           />
@@ -94,7 +94,7 @@ const HomePage = () => {
       </div>
       <video
         className="background-video"
-        src="/home-video.mp4"
+        src="https://alexocampos.github.io/liga-espanhola-aoe2-static/videos/home-video.mp4"
         muted
         autoPlay
         preload="auto"

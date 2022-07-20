@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import aboutImg from "../assets/cea_logo.png";
 
 const AboutPage = () => {
   return (
@@ -30,7 +29,10 @@ const AboutPage = () => {
           </p>
           <p>Bienvenidos y 14!</p>
         </article>
-        <img src={aboutImg} alt="Comunidad Española Age of Empires" />
+        <img
+          src="https://alexocampos.github.io/liga-espanhola-aoe2-static/assets/cea_logo.png"
+          alt="Comunidad Española Age of Empires"
+        />
       </Wrapper>
     </main>
   );

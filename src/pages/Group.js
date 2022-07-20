@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import styled from "styled-components";
-import hero1 from "../assets/bannerE.png";
 import { seasons } from "../utils/constants";
 import { ListView } from "../components";
 
@@ -57,7 +56,11 @@ const Group = () => {
           <ListView />
         </article>
 
-        <img className="background" src={hero1} alt="background 1" />
+        <img
+          className="background"
+          src="https://alexocampos.github.io/liga-espanhola-aoe2-static/assets/bannerE.png"
+          alt="background 1"
+        />
       </Wrapper>
     </main>
   );

@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import hero1 from "../assets/bannerE.png";
-import hero2 from "../assets/bannerF.png";
 
 const Hero = () => {
   return (
@@ -16,7 +14,10 @@ const Hero = () => {
         <Link to="temporada-3">
           <button className="btn">Info T3</button>
         </Link>
-        <img src={hero2} alt="background 1" />
+        <img
+          src="https://alexocampos.github.io/liga-espanhola-aoe2-static/assets/bannerF.png"
+          alt="background 1"
+        />
       </article>
       <article className="x2">
         <h3>Temporada 4</h3>
@@ -27,7 +28,10 @@ const Hero = () => {
         <Link to="temporada-4">
           <button className="btn">Info T4</button>
         </Link>
-        <img src={hero1} alt="background 2" />
+        <img
+          src="https://alexocampos.github.io/liga-espanhola-aoe2-static/assets/bannerE.png"
+          alt="background 2"
+        />
       </article>
     </Wrapper>
   );

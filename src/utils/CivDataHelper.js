@@ -27,7 +27,7 @@ class CivDataHelper extends Component {
     const civs = CivData.civilizations;
     var result = civs.filter((civ) => {
       if (civ.id === civId) {
-        return civ.name;
+        return civ.name.toLocaleLowerCase();
       }
       return undefined;
     });
@@ -37,7 +37,7 @@ class CivDataHelper extends Component {
       return "unknow";
     }
 
-    return `/civs/${result[0].name}.png`;
+    return `/civs/${result[0].name.toLocaleLowerCase()}.png`;
   };
 }
 

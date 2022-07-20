@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import logo from "../assets/lea_logo.png";
-
 function convertHex(hexCode, opacity = 1) {
   var hex = hexCode.replace("#", "");
 
@@ -37,9 +35,17 @@ const Flag = ({ playerName, playerImg, playerClan, haloColor, flagColor }) => {
             background: `radial-gradient(circle, ${rgbHalo1} 0%, ${rgbHalo2} 49%)`,
           }}
         ></div>
-        <img className="lea-logo" src={logo} alt="Liga Española" />
+        <img
+          className="lea-logo"
+          src="https://alexocampos.github.io/liga-espanhola-aoe2-static/assets/lea_logo.png"
+          alt="Liga Española"
+        />
         {playerClan && playerClan.length > 1 ? (
-          <img className="clan-logo" src={playerClan} alt="clan" />
+          <img
+            className="clan-logo"
+            src={`https://alexocampos.github.io/liga-espanhola-aoe2-static${playerClan}`}
+            alt="clan"
+          />
         ) : (
           ""
         )}

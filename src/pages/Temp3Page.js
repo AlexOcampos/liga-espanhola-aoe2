@@ -44,7 +44,10 @@ const Temp3Page = () => {
                   onClick={() => window.open(link)}
                   className="container"
                 >
-                  <img src={`./divisions/${image}`} alt={text} />
+                  <img
+                    src={`https://alexocampos.github.io/liga-espanhola-aoe2-static/divisions/${image}`}
+                    alt={text}
+                  />
                   <span className="title-division">{text}</span>
                 </li>
               );

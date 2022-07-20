@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import handbook_t4 from "../assets/handbook_t4.png";
 
 const Temp3Page = () => {
   const goToToornament = (url) => {
@@ -45,7 +44,7 @@ const Temp3Page = () => {
         </article>
         <article>
           <img
-            src={handbook_t4}
+            src="https://alexocampos.github.io/liga-espanhola-aoe2-static/assets/handbook_t4.png"
             alt="Te crees muy listo?"
             className="handbook"
             onClick={() =>

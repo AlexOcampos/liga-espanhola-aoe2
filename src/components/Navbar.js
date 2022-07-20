@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import logo from "../assets/lea_logo.png";
-import twitter from "../assets/twitter.jpg";
-import discord from "../assets/discord_color.jpg";
 import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import styled from "styled-components";
@@ -31,7 +28,10 @@ const Nav = () => {
           <div className="nav-center">
             <div className="nav-header">
               <Link to="/">
-                <img src={logo} alt="Liga Española" />
+                <img
+                  src="https://alexocampos.github.io/liga-espanhola-aoe2-static/assets/lea_logo.png"
+                  alt="Liga Española"
+                />
               </Link>
               <button
                 type="button"
@@ -59,12 +59,12 @@ const Nav = () => {
             </ul>
             <div className="social">
               <img
-                src={twitter}
+                src="https://alexocampos.github.io/liga-espanhola-aoe2-static/assets/twitter.jpg"
                 alt="twitter"
                 onClick={() => window.open(twitterUrl, "_blank")}
               />
               <img
-                src={discord}
+                src="https://alexocampos.github.io/liga-espanhola-aoe2-static/assets/discord_color.jpg"
                 alt="discord"
                 onClick={() => window.open(discordUrl, "_blank")}
               />

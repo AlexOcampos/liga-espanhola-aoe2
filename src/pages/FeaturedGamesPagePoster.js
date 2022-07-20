@@ -5,8 +5,6 @@ import { FeaturedGame } from "../components";
 
 import domtoimage from "dom-to-image";
 
-import logo from "../assets/lea_logo.png";
-
 const FeaturedGamesPagePoster = () => {
   let posterImg = useRef(null);
   let resultPosterImg = useRef(null);
@@ -44,7 +42,11 @@ const FeaturedGamesPagePoster = () => {
           ref={posterImg}
           style={{ display: showingElements ? "flex" : "none" }}
         >
-          <img src={logo} alt="Liga Española" className="poster-logo" />
+          <img
+            src="https://alexocampos.github.io/liga-espanhola-aoe2-static/assets/lea_logo.png"
+            alt="Liga Española"
+            className="poster-logo"
+          />
           <div className="title">
             <h2>Partidas destacadas</h2>
             <div className="underline"></div>

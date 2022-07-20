@@ -29,8 +29,17 @@ const CivDraft = ({ template, civBans, civPicks, civSnipeds }) => {
           var civImg = CivDataHelper.getCivImage(civId);
           return (
             <div key={`civban-${civId}-${index}`} className="civIcon">
-              <img className="ban" src="/ban-map.png" alt="ban map" />
-              <img className="civImg" src={civImg} alt={civ} title={civ} />
+              <img
+                className="ban"
+                src="https://alexocampos.github.io/liga-espanhola-aoe2-static/draft/ban-map.png"
+                alt="ban map"
+              />
+              <img
+                className="civImg"
+                src={`https://alexocampos.github.io/liga-espanhola-aoe2-static/${civImg}`}
+                alt={civ}
+                title={civ}
+              />
             </div>
           );
         })}
@@ -39,9 +48,18 @@ const CivDraft = ({ template, civBans, civPicks, civSnipeds }) => {
           var civImg = CivDataHelper.getCivImage(civId);
           return (
             <div key={`civpick-${civId}-${index}`} className="civIcon">
-              <img className="civImg" src={civImg} alt={civ} title={civ} />
+              <img
+                className="civImg"
+                src={`https://alexocampos.github.io/liga-espanhola-aoe2-static/${civImg}`}
+                alt={civ}
+                title={civ}
+              />
               {civSnipeds.includes(civId) ? (
-                <img className="snipped" src="/snipe.png" alt="snipe" />
+                <img
+                  className="snipped"
+                  src="https://alexocampos.github.io/liga-espanhola-aoe2-static/draft/snipe.png"
+                  alt="snipe"
+                />
               ) : (
                 ""
               )}

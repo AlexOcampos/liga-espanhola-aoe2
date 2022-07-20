@@ -20,7 +20,10 @@ const Temp5Page = () => {
               return (
                 <Link key={id} to={`/season/5/group/${id}`}>
                   <li className="container">
-                    <img src={`./divisions/${image}`} alt={text} />
+                    <img
+                      src={`https://alexocampos.github.io/liga-espanhola-aoe2-static/divisions/${image}`}
+                      alt={text}
+                    />
                     <span className="title-division">{text}</span>
                   </li>
                 </Link>

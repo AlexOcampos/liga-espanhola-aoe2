@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { divisionesT3 } from "../utils/constants";
-import twitchLogo from "../assets/twitch.png";
-import youtubeLogo from "../assets/youtube.png";
 import "animate.css";
 
 const FeaturedGame = ({ match }) => {
@@ -37,9 +35,9 @@ const FeaturedGame = ({ match }) => {
         <img
           src={
             casterPlatform === "twitch"
-              ? twitchLogo
+              ? "https://alexocampos.github.io/liga-espanhola-aoe2-static/assets/twitch.png"
               : casterPlatform === "youtube"
-              ? youtubeLogo
+              ? "https://alexocampos.github.io/liga-espanhola-aoe2-static/assets/youtube.png"
               : ""
           }
           alt={caster}

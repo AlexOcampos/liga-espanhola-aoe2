@@ -13,7 +13,6 @@ import {
 } from "../components";
 
 import { seasons } from "../utils/constants";
-import hero1 from "../assets/bannerE.png";
 
 const MatchPage = () => {
   const { matchId } = useParams();
@@ -484,7 +483,11 @@ const MatchPage = () => {
           </div>
         </article>
 
-        <img className="background" src={hero1} alt="background 1" />
+        <img
+          className="background"
+          src="https://alexocampos.github.io/liga-espanhola-aoe2-static/assets/bannerE.png"
+          alt="background 1"
+        />
       </Wrapper>
     </main>
   );

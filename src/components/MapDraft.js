@@ -31,10 +31,14 @@ const MapDraft = ({ template, mapBans, mapPicks }) => {
 
           return (
             <div key={`mapban-${mapId}-${index}`} className="map-placeholder">
-              <img className="ban" src="/ban-map.png" alt="ban map" />
+              <img
+                className="ban"
+                src="https://alexocampos.github.io/liga-espanhola-aoe2-static/draft/ban-map.png"
+                alt="ban map"
+              />
               <img
                 className="mapImg"
-                src={mapImage}
+                src={`https://alexocampos.github.io/liga-espanhola-aoe2-static/${mapImage}`}
                 alt={mapName}
                 title={mapName}
               />
@@ -51,7 +55,7 @@ const MapDraft = ({ template, mapBans, mapPicks }) => {
               <img
                 className="mapImg"
                 key={`mappick-${mapId}-${index}`}
-                src={mapImage}
+                src={`https://alexocampos.github.io/liga-espanhola-aoe2-static/${mapImage}`}
                 alt={mapName}
                 title={mapName}
               />

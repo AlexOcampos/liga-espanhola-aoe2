@@ -1,7 +1,4 @@
 import React from "react";
-import logo from "../assets/lea_logo.png";
-import twitter from "../assets/twitter.jpg";
-import discord from "../assets/discord_color.jpg";
 import { Link } from "react-router-dom";
 import { useNavContext } from "../context/nav_context";
 import { FaTimes } from "react-icons/fa";
@@ -19,7 +16,10 @@ const Sidebar = () => {
         className={`${isSidebarOpen ? "sidebar show-sidebar" : "sidebar"}`}
       >
         <div className="sidebar-header">
-          <img src={logo} alt="Liga Española" />
+          <img
+            src="https://alexocampos.github.io/liga-espanhola-aoe2-static/assets/lea_logo.png"
+            alt="Liga Española"
+          />
           <button className="close-btn" type="button" onClick={closeSidebar}>
             <FaTimes />
           </button>
@@ -37,12 +37,12 @@ const Sidebar = () => {
         </ul>
         <div className="social">
           <img
-            src={twitter}
+            src="https://alexocampos.github.io/liga-espanhola-aoe2-static/assets/twitter.jpg"
             alt="twitter"
             onClick={() => window.open(twitterUrl, "_blank")}
           />
           <img
-            src={discord}
+            src="https://alexocampos.github.io/liga-espanhola-aoe2-static/assets/discord_color.jpg"
             alt="discord"
             onClick={() => window.open(discordUrl, "_blank")}
           />
