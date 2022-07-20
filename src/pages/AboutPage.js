@@ -25,7 +25,7 @@ const AboutPage = () => {
           </p>
           <p>
             Uno de nuestros grandes hitos ha sido lograr la organización de la
-            Liga Española de AoE2 que ya va por su 3ª temporada y cuenta con más
+            Liga Española de AoE2 que ya va por su 5ª temporada y cuenta con más
             de 170 jugadores activos.
           </p>
           <p>Bienvenidos y 14!</p>
