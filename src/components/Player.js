@@ -34,7 +34,7 @@ const Player = ({ player }) => {
       <section>
         <div className="player">
           <img
-            src={`/divisions/${divisionImg}`}
+            src={`https://alexocampos.github.io/liga-espanhola-aoe2-static/divisions/${divisionImg}`}
             alt={divisionName}
             title={divisionName}
           />
