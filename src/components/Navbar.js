@@ -8,7 +8,7 @@ import { useLocation } from "react-router-dom";
 
 const Nav = () => {
   const twitterUrl = "https://twitter.com/Aoe2LigaESP";
-  const discordUrl = "https://discord.gg/cK9ZgpfH";
+  const discordUrl = "https://discord.gg/ZXkABxKFq5";
   const location = useLocation();
   const url = links.filter((link) => link.url === location.pathname);
 

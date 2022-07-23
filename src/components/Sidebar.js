@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 const Sidebar = () => {
   const twitterUrl = "https://twitter.com/Aoe2LigaESP";
-  const discordUrl = "https://discord.gg/cK9ZgpfH";
+  const discordUrl = "https://discord.gg/ZXkABxKFq5";
   const { isSidebarOpen, closeSidebar } = useNavContext();
 
   return (

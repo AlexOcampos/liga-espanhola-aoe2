@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useNavContext } from "../context/nav_context";
-//import { ButtonModern } from "../components";
+import { ButtonModern } from "../components";
 
 const HomePage = () => {
   const registerDate = "2022-08-1 00:20:00";
   const { closeNotification, closeNavbar } = useNavContext();
   const twitterUrl = "https://twitter.com/Aoe2LigaESP";
-  const discordUrl = "https://discord.gg/cK9ZgpfH";
+  const discordUrl = "https://discord.gg/ZXkABxKFq5";
 
   useEffect(() => {
     closeNotification();
@@ -78,6 +78,15 @@ const HomePage = () => {
           alt="Liga Española"
         />
         <h2>{timerComponents.length ? timerComponents : <span>14!</span>}</h2>
+
+        <div className="links">
+          <ButtonModern
+            text="Inscribete"
+            link="/inscripcion-t5"
+            marginTop="0"
+            fontSize="1.8em"
+          />
+        </div>
 
         <div className="social">
           <img
