@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+
+import { useNavContext } from "../context/nav_context";
+
 const ErrorPage = () => {
+  const { closeNotification, closeNavbar } = useNavContext();
+
+  useEffect(() => {
+    closeNotification();
+    closeNavbar();
+  }, []);
+
   return (
     <Wrapper className="page-100">
       <section>
