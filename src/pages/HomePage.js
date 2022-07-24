@@ -6,7 +6,7 @@ import { ButtonModern } from "../components";
 const HomePage = () => {
   const registerDate = "2022-08-1 00:20:00";
   const { closeNotification, closeNavbar } = useNavContext();
-  const twitterUrl = "https://twitter.com/Aoe2LigaESP";
+  const twitterUrl = "https://twitter.com/Aoe2ESP";
   const discordUrl = "https://discord.gg/ZXkABxKFq5";
 
   useEffect(() => {
@@ -80,12 +80,12 @@ const HomePage = () => {
         <h2>{timerComponents.length ? timerComponents : <span>14!</span>}</h2>
 
         <div className="links">
-          <ButtonModern
+          {/* <ButtonModern
             text="Inscribete"
             link="/inscripcion-t5"
             marginTop="0"
             fontSize="1.8em"
-          />
+          /> */}
         </div>
 
         <div className="social">

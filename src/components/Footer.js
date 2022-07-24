@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="row">
         <h5>
           &copy; {new Date().getFullYear()}
-          <span> Liga Española AoE</span>
+          <span> Liga Española AoE2</span>
         </h5>
         <h5>All rights reserved</h5>
         <h5>v. 5.0.0</h5>
