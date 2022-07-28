@@ -35,7 +35,7 @@ function App() {
         <Route exact path="/hall-of-fame">
           <HallOfFamePage />
         </Route>
-        {/* <Route exact path="/temporada-3">
+        <Route exact path="/temporada-3">
           <Temp3 />
         </Route>
         <Route exact path="/players">
@@ -61,7 +61,7 @@ function App() {
         </Route>
         <Route exact path="/admin/featured-games">
           <FeaturedGamesPoster />
-        </Route> */}
+        </Route>
         <Route exact path="*">
           <Error />
         </Route>

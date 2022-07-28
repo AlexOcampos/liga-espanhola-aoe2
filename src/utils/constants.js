@@ -1,8 +1,13 @@
 export const links = [
   {
     id: 1,
-    text: "¡Inscribete en la T5!",
+    text: "Inscribete!",
     url: "/inscripcion-t5",
+  },
+  {
+    id: 4,
+    text: "Temporada 5",
+    url: "temporada-5",
   },
   {
     id: 2,
@@ -239,7 +244,7 @@ export const t5registerform = [
     stepName: "Origen",
     fields: [
       {
-        fieldId: "country-selector",
+        fieldId: "country_selector",
         title: "",
         mandatory: true,
         type: "single-select",
@@ -256,7 +261,7 @@ export const t5registerform = [
     stepName: "Perfil AoE2",
     fields: [
       {
-        fieldId: "aoe2net-principal",
+        fieldId: "aoe2net_principal",
         title: "* url AoE2net cuenta principal",
         mandatory: true,
         type: "text",
@@ -284,6 +289,136 @@ export const t5registerform = [
   },
   {
     stepId: 4,
+    stepName: "Clan",
+    fields: [
+      {
+        fieldId: "clan",
+        title: "",
+        mandatory: true,
+        type: "single-select-big",
+        options: [
+          {
+            id: -1,
+            name: "<No tengo clan>",
+          },
+          {
+            id: 12,
+            name: "Age of Pandemia",
+            image: "AoP.png",
+          },
+          {
+            id: 13,
+            name: "Banda Catalana",
+            image: "BCT.png",
+          },
+          {
+            id: 7,
+            name: "BOBOS",
+            image: "BOBOS.png",
+          },
+
+          {
+            id: 5,
+            name: "Chirimoyos",
+            image: "Cmoyo.png",
+          },
+          {
+            id: 9,
+            name: "Clan Templario",
+            image: "CT.png",
+          },
+
+          {
+            id: 16,
+            name: "Comando KBRA",
+            image: "KBRA.png",
+          },
+          {
+            id: 2,
+            name: "Conquistadores Españoles",
+            image: "CONQUIS.png",
+          },
+          {
+            id: 15,
+            name: "Gamer Legion",
+            image: "GL.png",
+          },
+          {
+            id: 6,
+            name: "Gentuzas",
+            image: "GZAS.png",
+          },
+          {
+            id: 14,
+            name: "Goth of the rings",
+            image: "GoT.png",
+          },
+
+          {
+            id: 1,
+            name: "Dark Knight",
+            image: "DK.png",
+          },
+
+          {
+            id: 11,
+            name: "Forocoches of Empires",
+            image: "FoE.png",
+          },
+          {
+            id: 8,
+            name: "Indeseables",
+            image: "IN.png",
+          },
+          {
+            id: 3,
+            name: "NHN",
+            image: "NHN.png",
+          },
+          {
+            id: 4,
+            name: "Rank1",
+            image: "R1.png",
+          },
+
+          {
+            id: 10,
+            name: "Trifulca de Bar",
+            image: "TdBar.png",
+          },
+          {
+            id: 17,
+            name: "VPKT",
+            image: "VPKT.png",
+          },
+          {
+            id: 0,
+            name: "Otro clan (especifica abajo)",
+            image: "other-clan.png",
+            showHideOptions: true,
+          },
+        ],
+        affectedHideOptions: true,
+      },
+      {
+        fieldId: "other-clan-explanation",
+        title:
+          "¿Tu clan no está en el listado? Escríbenos el nombre de tu clan y lo añadiremos al listado.",
+        mandatory: false,
+        type: "explanation",
+        hide: true,
+      },
+      {
+        fieldId: "clan_other_name",
+        title: "Nombre del clan",
+        mandatory: false,
+        type: "text",
+        hide: true,
+      },
+    ],
+  },
+  {
+    stepId: 5,
     stepName: "Social",
     fields: [
       {

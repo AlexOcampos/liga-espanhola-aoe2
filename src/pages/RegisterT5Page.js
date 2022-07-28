@@ -3,12 +3,18 @@ import styled from "styled-components";
 import { InputFieldText, ButtonModern } from "../components";
 import { t5registerform } from "../utils/constants";
 import { useNavContext } from "../context/nav_context";
+import axios from "axios";
 
 const RegisterT5 = () => {
   const [stepIndex, setStepIndex] = useState(0);
   const [regForm, setRegForm] = useState({});
   const [errorMsg, setErrorMsg] = useState("");
   const [showForm, setShowForm] = useState(true);
+  const [hideOptions, setHideOptions] = useState(true);
+  const [regInProgress, setRegInProgress] = useState(false);
+  const [regError, setRegError] = useState(false);
+  const [regCompleted, setRegCompleted] = useState(false);
+  const [regErrorMsg, setRegErrorMsg] = useState("");
 
   const { openNotification } = useNavContext();
 
@@ -69,14 +75,76 @@ const RegisterT5 = () => {
     setRegForm({ ...regForm, [name]: value });
   };
 
-  const handleClick = (name, value) => {
+  const handleClick = (name, value, showHideOptions) => {
+    if (hideOptions && showHideOptions) {
+      setHideOptions(false);
+    } else if (!hideOptions) {
+      setHideOptions(true);
+    }
     setRegForm({ ...regForm, [name]: value });
   };
 
+  const registerUser = async (registration) => {
+    const url = "https://liga-espanhola-aoe2.herokuapp.com/registrations";
+    console.log(registration);
+
+    try {
+      setShowForm(false);
+      setRegInProgress(true);
+      const response = await axios.post(url, registration);
+      if (response.status === 201) {
+        setRegInProgress(false);
+        setRegCompleted(true);
+        return true;
+      } else {
+        console.log(`(${response.status}) response: ${response.data}`);
+        setRegInProgress(false);
+        setRegError(true);
+        return false;
+      }
+    } catch (error) {
+      if (error.response.status === 400) {
+        setRegInProgress(false);
+        setRegError(true);
+        setRegErrorMsg(error.response.data.message);
+      } else {
+        setRegInProgress(false);
+        setRegError(true);
+      }
+      return false;
+    }
+  };
+
   const submitRegister = () => {
-    console.log(regForm);
-    // TODO: Save register
-    setShowForm(false);
+    var registrationData = {
+      username: regForm.username,
+      email: regForm.email,
+      discord: regForm.discord,
+      country_selector: regForm.country_selector,
+      clan: regForm.clan,
+      aoe2net_principal: regForm.aoe2net_principal,
+    };
+
+    if (regForm.clan_other_name) {
+      registrationData.clan_other_name = regForm.clan_other_name;
+    }
+    if (regForm.aoe2net_secondary_1) {
+      registrationData.aoe2net_secondary_1 = regForm.aoe2net_secondary_1;
+    }
+    if (regForm.aoe2net_secondary_2) {
+      registrationData.aoe2net_secondary_2 = regForm.aoe2net_secondary_2;
+    }
+    if (regForm.twitch) {
+      registrationData.twitch = regForm.twitch;
+    }
+    if (regForm.twitter) {
+      registrationData.twitter = regForm.twitter;
+    }
+    if (regForm.youtube) {
+      registrationData.youtube = regForm.youtube;
+    }
+
+    registerUser(registrationData);
   };
 
   return (
@@ -107,17 +175,28 @@ const RegisterT5 = () => {
               >
                 {step.fields.map((field) => {
                   if (field.type === "text") {
-                    return (
-                      <InputFieldText
-                        key={field.fieldId}
-                        title={field.title}
-                        id={field.fieldId}
-                        name={field.fieldId}
-                        onChange={handleChange}
-                      />
-                    );
+                    if (!(field.hide && hideOptions)) {
+                      return (
+                        <InputFieldText
+                          key={field.fieldId}
+                          title={field.title}
+                          id={field.fieldId}
+                          name={field.fieldId}
+                          onChange={handleChange}
+                        />
+                      );
+                    }
                   } else if (field.type === "explanation") {
-                    return <p key={field.fieldId}>{field.title}</p>;
+                    return (
+                      <p
+                        key={field.fieldId}
+                        className={`${
+                          field.hide && hideOptions ? "hideField" : ""
+                        }`}
+                      >
+                        {field.title}
+                      </p>
+                    );
                   } else if (field.type === "single-select") {
                     return field.options.map((option, index) => {
                       return (
@@ -127,13 +206,56 @@ const RegisterT5 = () => {
                             regForm[field.fieldId] === index
                               ? "single-select-option-selected"
                               : ""
-                          }`}
+                          } `}
                           onClick={() => handleClick(`${field.fieldId}`, index)}
                         >
                           {option}
                         </div>
                       );
                     });
+                  } else if (field.type === "single-select-big") {
+                    return (
+                      <div
+                        className={`single-select-big ${
+                          field.affectedHideOptions && hideOptions
+                            ? "hide-options"
+                            : "show-hide-options"
+                        }`}
+                        key={`${field.fieldId}-${index}`}
+                      >
+                        {field.options.map((option, index) => {
+                          return (
+                            <div
+                              key={`big-${field.fieldId}-${index}`}
+                              className={`single-select-option-big ${
+                                regForm[field.fieldId] === option.id
+                                  ? "single-select-option-selected"
+                                  : ""
+                              }`}
+                              onClick={() =>
+                                handleClick(
+                                  `${field.fieldId}`,
+                                  option.id,
+                                  option.showHideOptions
+                                )
+                              }
+                            >
+                              {option.image ? (
+                                <img
+                                  src={`https://alexocampos.github.io/liga-espanhola-aoe2-static/clans/${option.image}`}
+                                  alt={option.name}
+                                  title={option.name}
+                                />
+                              ) : (
+                                ""
+                              )}
+
+                              <span>{option.name}</span>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    );
                   }
                   return "";
                 })}
@@ -166,14 +288,44 @@ const RegisterT5 = () => {
           )}
         </div>
       </div>
-      <div className={`${showForm ? "hide-form" : "confirmation-reg"}`}>
+
+      <div className={`${!regInProgress ? "hide-form" : "confirmation-reg"}`}>
+        <div className="lds-dual-ring"></div>
+      </div>
+
+      <div className={`${!regCompleted ? "hide-form" : "confirmation-reg"}`}>
         <h1>Tu inscripción ha sido recibida</h1>
         <p>Gracias por unirte a la liga española!</p>
         <p>
           En breve un miembro de la organización revisará tu solicitud y te
           confirmará tu inscripción.
         </p>
-        <h3>14!!</h3>
+        <p>
+          Mientras tanto, puedes consultar toda la info de la nueva temporada
+          aquí:
+        </p>
+        <ButtonModern
+          text="Temporada 5"
+          link="/temporada-5"
+          marginTop="0"
+          fontSize="1.2em"
+        />
+      </div>
+
+      <div className={`${!regError ? "hide-form" : "confirmation-reg"}`}>
+        <h1>Ooops esto es embarazoso</h1>
+        <p>Parece que ha habido un problema con la inscripción.</p>
+        <p>{regErrorMsg}</p>
+        <p>
+          <i>(seguro que la culpa es de tu ISP 11)</i>
+        </p>
+        <p>Refresca la página o haz click aquí:</p>
+        <ButtonModern
+          text="Inscribete"
+          link="/inscripcion-t5"
+          marginTop="0"
+          fontSize="1.8em"
+        />
       </div>
     </Wrapper>
   );
@@ -184,6 +336,68 @@ const Wrapper = styled.section`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
+  .lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .single-select-big {
+    overflow: auto;
+    width: 26rem;
+    margin-bottom: 1rem;
+  }
+
+  .hide-options {
+    height: 48vh;
+  }
+
+  .show-hide-options {
+    height: 24vh;
+  }
+
+  .hideField {
+    display: none;
+  }
+
+  .single-select-option-big {
+    margin: 0.5rem;
+    padding: 1.2rem;
+    width: 22rem;
+    border-radius: 8px;
+    border: solid 1px var(--clr-grey-10);
+    background-color: var(--clr-grey-10);
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    img {
+      width: 2rem;
+    }
+    span {
+      margin-left: 0.5rem;
+    }
+  }
 
   .hide-form {
     display: none;
@@ -218,7 +432,7 @@ const Wrapper = styled.section`
 
   .column-form {
     padding: 1rem;
-    height: 50vh;
+    height: 60vh;
     width: 700px;
     transition: 0.5s;
     position: relative;
@@ -246,7 +460,7 @@ const Wrapper = styled.section`
     //display: none;
     width: 100%;
     height: 100%;
-    margin-left: 2rem;
+    margin-left: 0.5rem;
   }
 
   .step-form {
