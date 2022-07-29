@@ -17,6 +17,8 @@ import {
   FeaturedGames,
   FeaturedGamesPoster,
   Group,
+  AdminHome,
+  AdminRegistrations,
 } from "./pages/index";
 
 function App() {
@@ -58,6 +60,12 @@ function App() {
         </Route>
         <Route exact path="/featured-games">
           <FeaturedGames />
+        </Route>
+        <Route exact path="/admin">
+          <AdminHome />
+        </Route>
+        <Route exact path="/admin/registrations">
+          <AdminRegistrations />
         </Route>
         <Route exact path="/admin/featured-games">
           <FeaturedGamesPoster />

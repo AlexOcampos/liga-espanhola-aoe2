@@ -11,6 +11,8 @@ import Group from "./Group";
 import Players from "./PlayersPage";
 import FeaturedGames from "./FeaturedGamesPage";
 import FeaturedGamesPoster from "./FeaturedGamesPagePoster";
+import AdminHome from "./AdminHome";
+import AdminRegistrations from "./AdminRegistrations";
 
 export {
   Home,
@@ -26,4 +28,6 @@ export {
   Match,
   FeaturedGames,
   FeaturedGamesPoster,
+  AdminHome,
+  AdminRegistrations,
 };
