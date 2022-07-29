@@ -125,8 +125,8 @@ const Temp5Page = () => {
               </a>
             </p>
             <p>
-              Primero se jugarán los HM de los 2 jugadores y de último se jugará
-              el último mapa en ser elegido en el pick.
+              Primero se jugarán los HM de los 2 jugadores y como tercera
+              partida se jugará el último mapa en ser elegido en el pick.
             </p>
           </div>
         </article>
@@ -228,7 +228,7 @@ const Temp5Page = () => {
             </p>
             <p>
               Por último, comentar que las divisiones hasta que cerremos las
-              inscripciones todavía no sabemos cuantas abrá así que nos toca
+              inscripciones todavía no sabemos cuantas habrá así que nos toca
               esperar hasta que terminen las inscripciones.
             </p>
           </div>
