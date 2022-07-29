@@ -4,7 +4,8 @@ import { useNavContext } from "../context/nav_context";
 import { ButtonModern } from "../components";
 
 const HomePage = () => {
-  const registerDate = "2022-08-1 00:20:00";
+  const registerDate = "2022-07-31 22:00:00";
+  //const registerDate = "2022-07-24 22:00:00";
   const { closeNotification, closeNavbar } = useNavContext();
   const twitterUrl = "https://twitter.com/Aoe2ESP";
   const discordUrl = "https://discord.gg/ZXkABxKFq5";
@@ -77,7 +78,31 @@ const HomePage = () => {
           src="https://alexocampos.github.io/liga-espanhola-aoe2-static/assets/lea_logo.png"
           alt="Liga Española"
         />
-        <h2>{timerComponents.length ? timerComponents : <span>14!</span>}</h2>
+        <h2>
+          {timerComponents.length ? (
+            timerComponents
+          ) : (
+            <div>
+              <span className="message">
+                Visita el canal de Twitch de{" "}
+                <a
+                  href="https://www.twitch.tv/craser09"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Craser09
+                </a>{" "}
+                que va a contarte + detalles de la T5
+              </span>
+              <ButtonModern
+                text="Inscribete"
+                link="/inscripcion-t5"
+                marginTop="2rem"
+                fontSize="1.1em"
+              />
+            </div>
+          )}
+        </h2>
 
         <div className="links">
           {/* <ButtonModern
@@ -123,6 +148,16 @@ const Wrapper = styled.main`
 
   h2 {
     color: var(--clr-grey-1);
+  }
+
+  .message {
+    text-transform: none;
+    a {
+      color: var(--clr-green-light);
+    }
+    a:hover {
+      color: var(--clr-primary-light-2);
+    }
   }
 
   .background-video {

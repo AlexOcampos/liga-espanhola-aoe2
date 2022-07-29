@@ -28,12 +28,14 @@
   --clr-grey-yellow: #4a4438;
 
   --clr-white: #1A1A1D;
+  --clr-black: #000000;
   --clr-red-dark: #EB5757;
   --clr-red-light: #F7A399;
   --clr-green-dark: #6bb621;
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-yellow-dark: #C9CC1F;
   --clr-dark-violet: #9400d3;
+  --clr-violet: #7B61FF;
   --clr-dark-blue: #00386a;
   --clr-copper: #D5B496;
   --clr-black: #222;
@@ -58,6 +60,7 @@ Global Styles
 
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+@import url('http://fonts.cdnfonts.com/css/true-lies');
 
 *,
 ::after,
