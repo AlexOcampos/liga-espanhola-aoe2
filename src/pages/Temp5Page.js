@@ -27,7 +27,7 @@ const Temp5Page = () => {
           </p>
           <p>
             Pero seamos sinceros, algunos no somos capaces de aprendernos un
-            build order, así que vamos resumiros alguno de las novedades y
+            build order, así que vamos resumiros algunas de las novedades y
             highlights de la T5 (eso si su no-lectura no exime de su
             cumplimento).
           </p>
