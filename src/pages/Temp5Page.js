@@ -73,7 +73,7 @@ const Temp5Page = () => {
               >
                 ByPass
               </a>{" "}
-              que es un mapa creado por Chrazini y T90 para la Hidden Map 4.
+              que es un mapa creado por Chrazini y T90 para la Hidden Cup 4.
             </p>
             <p>
               Los admin de la Liga Española hemos decidido probar e introducir
@@ -138,7 +138,7 @@ const Temp5Page = () => {
           </div>
           <div>
             <p>
-              A Verlock se le olvidó traer ☕ y decidimos no inventar nada
+              A Verlok se le olvidó traer ☕ y decidimos no inventar nada
               extraño para el pick de civilizaciones, así que seguiremos con el
               mismo formato de la T4 que creemos que gustó a todo el mundo.
             </p>
