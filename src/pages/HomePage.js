@@ -4,8 +4,7 @@ import { useNavContext } from "../context/nav_context";
 import { ButtonModern } from "../components";
 
 const HomePage = () => {
-  const registerDate = "2022-07-31 22:00:00";
-  //const registerDate = "2022-07-24 22:00:00";
+  const registerDate = "2022-08-1 22:30:00";
   const { closeNotification, closeNavbar } = useNavContext();
   const twitterUrl = "https://twitter.com/Aoe2ESP";
   const discordUrl = "https://discord.gg/ZXkABxKFq5";
